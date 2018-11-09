@@ -12,6 +12,17 @@
 		504328AA2195EF11000FA9B7 /* OnboardingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328A92195EF11000FA9B7 /* OnboardingPageControl.swift */; };
 		504328AD2195F7C3000FA9B7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328AC2195F7C3000FA9B7 /* Model.swift */; };
 		504328AF2195F7D2000FA9B7 /* CollectionSetupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */; };
+		504328B221960CD2000FA9B7 /* ClinicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328B121960CD2000FA9B7 /* ClinicListViewController.swift */; };
+		504328B821960E4E000FA9B7 /* ClinicListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328B721960E4E000FA9B7 /* ClinicListHeaderView.swift */; };
+		504328BA2196130C000FA9B7 /* GleamNavigationControllerStylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328B92196130C000FA9B7 /* GleamNavigationControllerStylable.swift */; };
+		504328BC21961583000FA9B7 /* ClinicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328BB21961583000FA9B7 /* ClinicTableViewCell.swift */; };
+		504328BE219615A8000FA9B7 /* ClinicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328BD219615A8000FA9B7 /* ClinicModel.swift */; };
+		504328C0219615C9000FA9B7 /* ClinicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328BF219615C9000FA9B7 /* ClinicViewModel.swift */; };
+		504328C321961631000FA9B7 /* GleamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328C221961631000FA9B7 /* GleamService.swift */; };
+		504328C521961663000FA9B7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328C421961663000FA9B7 /* NetworkManager.swift */; };
+		504328C921961A80000FA9B7 /* ClinicListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328C821961A80000FA9B7 /* ClinicListPresenter.swift */; };
+		504328CC21961B4E000FA9B7 /* ClinicListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328CB21961B4E000FA9B7 /* ClinicListConfigurator.swift */; };
+		504328CE21961BD6000FA9B7 /* ClinicListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328CD21961BD6000FA9B7 /* ClinicListInteractor.swift */; };
 		5079894C2195D5F100A6BE9D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079894B2195D5F100A6BE9D /* OnboardingViewController.swift */; };
 		5079894F2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079894E2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift */; };
 		507989512195DC7400A6BE9D /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989502195DC7400A6BE9D /* OnboardingModel.swift */; };
@@ -60,6 +71,17 @@
 		504328A92195EF11000FA9B7 /* OnboardingPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageControl.swift; sourceTree = "<group>"; };
 		504328AC2195F7C3000FA9B7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSetupable.swift; sourceTree = "<group>"; };
+		504328B121960CD2000FA9B7 /* ClinicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListViewController.swift; sourceTree = "<group>"; };
+		504328B721960E4E000FA9B7 /* ClinicListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListHeaderView.swift; sourceTree = "<group>"; };
+		504328B92196130C000FA9B7 /* GleamNavigationControllerStylable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GleamNavigationControllerStylable.swift; sourceTree = "<group>"; };
+		504328BB21961583000FA9B7 /* ClinicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicTableViewCell.swift; sourceTree = "<group>"; };
+		504328BD219615A8000FA9B7 /* ClinicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicModel.swift; sourceTree = "<group>"; };
+		504328BF219615C9000FA9B7 /* ClinicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicViewModel.swift; sourceTree = "<group>"; };
+		504328C221961631000FA9B7 /* GleamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GleamService.swift; sourceTree = "<group>"; };
+		504328C421961663000FA9B7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		504328C821961A80000FA9B7 /* ClinicListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListPresenter.swift; sourceTree = "<group>"; };
+		504328CB21961B4E000FA9B7 /* ClinicListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListConfigurator.swift; sourceTree = "<group>"; };
+		504328CD21961BD6000FA9B7 /* ClinicListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListInteractor.swift; sourceTree = "<group>"; };
 		5079894B2195D5F100A6BE9D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		5079894E2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		507989502195DC7400A6BE9D /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
@@ -107,6 +129,7 @@
 		01ED58BD057BF270CC8799F7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				504328B021960CBD000FA9B7 /* ClinicList */,
 				5079894A2195D5D200A6BE9D /* Onboarding */,
 				D914BA25C63E87D944602843 /* Screening */,
 			);
@@ -116,16 +139,80 @@
 		504328AB2195F7B1000FA9B7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				504328B92196130C000FA9B7 /* GleamNavigationControllerStylable.swift */,
 				504328AC2195F7C3000FA9B7 /* Model.swift */,
 				504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		504328B021960CBD000FA9B7 /* ClinicList */ = {
+			isa = PBXGroup;
+			children = (
+				504328CA21961B3B000FA9B7 /* Configurator */,
+				504328B621960E41000FA9B7 /* Model */,
+				504328B521960E37000FA9B7 /* Interactor */,
+				504328B421960E30000FA9B7 /* Presenter */,
+				504328B321960E26000FA9B7 /* View */,
+			);
+			path = ClinicList;
+			sourceTree = "<group>";
+		};
+		504328B321960E26000FA9B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				504328B121960CD2000FA9B7 /* ClinicListViewController.swift */,
+				504328B721960E4E000FA9B7 /* ClinicListHeaderView.swift */,
+				504328BB21961583000FA9B7 /* ClinicTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		504328B421960E30000FA9B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				504328C821961A80000FA9B7 /* ClinicListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		504328B521960E37000FA9B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				504328CD21961BD6000FA9B7 /* ClinicListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		504328B621960E41000FA9B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				504328BD219615A8000FA9B7 /* ClinicModel.swift */,
+				504328BF219615C9000FA9B7 /* ClinicViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		504328C12196161A000FA9B7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				504328C221961631000FA9B7 /* GleamService.swift */,
+				504328C421961663000FA9B7 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		504328CA21961B3B000FA9B7 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				504328CB21961B4E000FA9B7 /* ClinicListConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		5079894A2195D5D200A6BE9D /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				504328AB2195F7B1000FA9B7 /* Protocols */,
 				507989582195E2A200A6BE9D /* Configurator */,
 				507989552195E00600A6BE9D /* Presenter */,
 				5079894D2195D97F00A6BE9D /* View */,
@@ -172,6 +259,8 @@
 		507989592195E57300A6BE9D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				504328AB2195F7B1000FA9B7 /* Protocols */,
+				504328C12196161A000FA9B7 /* Network */,
 				D7BF48A121960AF5006E7876 /* Video */,
 				5079895A2195E57D00A6BE9D /* Styles */,
 			);
@@ -512,10 +601,19 @@
 				9EC77543A841A2785E7F2A75 /* ScreeningModuleInput.swift in Sources */,
 				E7EC3E52C1B4C3EFF20B2932 /* ScreeningPresenter.swift in Sources */,
 				8A01DB8A0C8599AA8E103122 /* ScreeningInteractorInput.swift in Sources */,
+				504328BA2196130C000FA9B7 /* GleamNavigationControllerStylable.swift in Sources */,
 				507989572195E01500A6BE9D /* OnboardingConfigurator.swift in Sources */,
 				D7BF48A321960B13006E7876 /* VideoCaptureSession.swift in Sources */,
 				507989542195DCF900A6BE9D /* OnboardingPresenter.swift in Sources */,
+				504328C0219615C9000FA9B7 /* ClinicViewModel.swift in Sources */,
+				504328B821960E4E000FA9B7 /* ClinicListHeaderView.swift in Sources */,
 				504328AA2195EF11000FA9B7 /* OnboardingPageControl.swift in Sources */,
+				504328BE219615A8000FA9B7 /* ClinicModel.swift in Sources */,
+				5079895C2195E58F00A6BE9D /* StyleExtensions.swift in Sources */,
+				504328C521961663000FA9B7 /* NetworkManager.swift in Sources */,
+				504328CC21961B4E000FA9B7 /* ClinicListConfigurator.swift in Sources */,
+				504328B221960CD2000FA9B7 /* ClinicListViewController.swift in Sources */,
+				504328C921961A80000FA9B7 /* ClinicListPresenter.swift in Sources */,
 				D7BF48A921960C3A006E7876 /* Styles.swift in Sources */,
 				D7BF48BE21961FB3006E7876 /* CaptureModeSegment.swift in Sources */,
 				5079895C2195E58F00A6BE9D /* StyleExtensions.swift in Sources */,
@@ -526,6 +624,9 @@
 				504328AF2195F7D2000FA9B7 /* CollectionSetupable.swift in Sources */,
 				BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */,
 				5079894C2195D5F100A6BE9D /* OnboardingViewController.swift in Sources */,
+				504328C321961631000FA9B7 /* GleamService.swift in Sources */,
+				504328BC21961583000FA9B7 /* ClinicTableViewCell.swift in Sources */,
+				504328CE21961BD6000FA9B7 /* ClinicListInteractor.swift in Sources */,
 				786EB5771481E18BCFBACA18 /* ScreeningRouter.swift in Sources */,
 				504328AD2195F7C3000FA9B7 /* Model.swift in Sources */,
 				D7BF48B42196122F006E7876 /* DiagnosisIndicatorView.swift in Sources */,

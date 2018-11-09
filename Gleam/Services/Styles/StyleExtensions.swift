@@ -37,3 +37,33 @@ extension UIColor {
         static let separatorColor = UIColor(rgb: 0xF9F8FA)
     }
 }
+
+
+extension UISearchBar {
+    func setTextColor(color: UIColor) {
+        let svs = subviews.flatMap { $0.subviews }
+        guard let textField = (svs.first { $0 is UITextField }) as? UITextField else { return }
+        textField.textColor = color
+    }
+}
+
+
+extension UIViewController {
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+extension UINavigationController {
+    override open var childViewControllerForStatusBarStyle: UIViewController? {
+        return self.topViewController
+    }
+}
+
