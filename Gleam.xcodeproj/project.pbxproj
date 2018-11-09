@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		442D1C975F9E78A17C91BF6C /* ScreeningViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85D64B0409E8631E3C3012 /* ScreeningViewInput.swift */; };
+		504328A82195E958000FA9B7 /* OnboardingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328A72195E958000FA9B7 /* OnboardingCollectionView.swift */; };
+		504328AA2195EF11000FA9B7 /* OnboardingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328A92195EF11000FA9B7 /* OnboardingPageControl.swift */; };
+		504328AD2195F7C3000FA9B7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328AC2195F7C3000FA9B7 /* Model.swift */; };
+		504328AF2195F7D2000FA9B7 /* CollectionSetupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */; };
+		5079894C2195D5F100A6BE9D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079894B2195D5F100A6BE9D /* OnboardingViewController.swift */; };
+		5079894F2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079894E2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift */; };
+		507989512195DC7400A6BE9D /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989502195DC7400A6BE9D /* OnboardingModel.swift */; };
+		507989542195DCF900A6BE9D /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989532195DCF900A6BE9D /* OnboardingPresenter.swift */; };
+		507989572195E01500A6BE9D /* OnboardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989562195E01500A6BE9D /* OnboardingConfigurator.swift */; };
+		5079895C2195E58F00A6BE9D /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079895B2195E58F00A6BE9D /* StyleExtensions.swift */; };
+		6C064104B68DB404FDCFDBB8 /* Pods_Gleam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B176C197D1B936CD70130 /* Pods_Gleam.framework */; };
 		786EB5771481E18BCFBACA18 /* ScreeningRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161852760482C25BFBD8C1D3 /* ScreeningRouter.swift */; };
 		83A5981978D43BC70F56A403 /* ScreeningInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A71233AAD851C4155E9397 /* ScreeningInteractorOutput.swift */; };
 		86A2CC175BDFBA4D8BBF4AC7 /* ScreeningModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */; };
@@ -16,7 +27,6 @@
 		9EC77543A841A2785E7F2A75 /* ScreeningModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A04FA7B2A8367F470A21D9 /* ScreeningModuleInput.swift */; };
 		BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */; };
 		C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */; };
-		D6EC3C4E471D17D571C43979 /* Pods_Gleam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88A1EE3E10B6D66FD136E51 /* Pods_Gleam.framework */; };
 		D7FBBA442195C5E900410C10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBBA432195C5E900410C10 /* AppDelegate.swift */; };
 		D7FBBA462195C5E900410C10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBBA452195C5E900410C10 /* ViewController.swift */; };
 		D7FBBA492195C5E900410C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA472195C5E900410C10 /* Main.storyboard */; };
@@ -27,16 +37,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10AE4856F788BAC8D2F095D5 /* Pods-Gleam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.release.xcconfig"; sourceTree = "<group>"; };
 		1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningViewOutput.swift; sourceTree = "<group>"; };
 		161852760482C25BFBD8C1D3 /* ScreeningRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningRouter.swift; sourceTree = "<group>"; };
 		1F43B77C40F753204C9EBC8D /* ScreeningViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningViewController.swift; sourceTree = "<group>"; };
 		21A71233AAD851C4155E9397 /* ScreeningInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningInteractorOutput.swift; sourceTree = "<group>"; };
 		2C85D64B0409E8631E3C3012 /* ScreeningViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningViewInput.swift; sourceTree = "<group>"; };
 		46164AF6797F6BF4C003F3D2 /* ScreeningPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningPresenter.swift; sourceTree = "<group>"; };
+		4F0B176C197D1B936CD70130 /* Pods_Gleam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gleam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		504328A72195E958000FA9B7 /* OnboardingCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionView.swift; sourceTree = "<group>"; };
+		504328A92195EF11000FA9B7 /* OnboardingPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageControl.swift; sourceTree = "<group>"; };
+		504328AC2195F7C3000FA9B7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSetupable.swift; sourceTree = "<group>"; };
+		5079894B2195D5F100A6BE9D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		5079894E2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		507989502195DC7400A6BE9D /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		507989532195DCF900A6BE9D /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		507989562195E01500A6BE9D /* OnboardingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConfigurator.swift; sourceTree = "<group>"; };
+		5079895B2195E58F00A6BE9D /* StyleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
 		57A04FA7B2A8367F470A21D9 /* ScreeningModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningModuleInput.swift; sourceTree = "<group>"; };
 		82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningRouterInput.swift; sourceTree = "<group>"; };
 		87B46E5DBB9EDA2F79F8194E /* ScreeningInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningInteractor.swift; sourceTree = "<group>"; };
-		CB831FC7CFD113FF85509521 /* Pods-Gleam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.release.xcconfig"; sourceTree = "<group>"; };
+		A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.debug.xcconfig"; sourceTree = "<group>"; };
 		CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningModuleConfigurator.swift; sourceTree = "<group>"; };
 		D7FBBA402195C5E900410C10 /* Gleam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gleam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FBBA432195C5E900410C10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,8 +67,6 @@
 		D7FBBA4A2195C5E900410C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7FBBA4D2195C5E900410C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7FBBA4F2195C5E900410C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF6ACA1E756D9822795543B0 /* Pods-Gleam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.debug.xcconfig"; sourceTree = "<group>"; };
-		E88A1EE3E10B6D66FD136E51 /* Pods_Gleam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gleam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1809B55881C52C53CC22AAB /* ScreeningInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningInteractorInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6EC3C4E471D17D571C43979 /* Pods_Gleam.framework in Frameworks */,
+				6C064104B68DB404FDCFDBB8 /* Pods_Gleam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,17 +85,82 @@
 		01ED58BD057BF270CC8799F7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5079894A2195D5D200A6BE9D /* Onboarding */,
 				D914BA25C63E87D944602843 /* Screening */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		58CD71AAF493AA9C768A6C26 /* Frameworks */ = {
+		504328AB2195F7B1000FA9B7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E88A1EE3E10B6D66FD136E51 /* Pods_Gleam.framework */,
+				504328AC2195F7C3000FA9B7 /* Model.swift */,
+				504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */,
 			);
-			name = Frameworks;
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5079894A2195D5D200A6BE9D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				504328AB2195F7B1000FA9B7 /* Protocols */,
+				507989582195E2A200A6BE9D /* Configurator */,
+				507989552195E00600A6BE9D /* Presenter */,
+				5079894D2195D97F00A6BE9D /* View */,
+				507989522195DCA500A6BE9D /* Model */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5079894D2195D97F00A6BE9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5079894B2195D5F100A6BE9D /* OnboardingViewController.swift */,
+				504328A72195E958000FA9B7 /* OnboardingCollectionView.swift */,
+				5079894E2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift */,
+				504328A92195EF11000FA9B7 /* OnboardingPageControl.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		507989522195DCA500A6BE9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				507989502195DC7400A6BE9D /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		507989552195E00600A6BE9D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				507989532195DCF900A6BE9D /* OnboardingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		507989582195E2A200A6BE9D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				507989562195E01500A6BE9D /* OnboardingConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		507989592195E57300A6BE9D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5079895A2195E57D00A6BE9D /* Styles */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5079895A2195E57D00A6BE9D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				5079895B2195E58F00A6BE9D /* StyleExtensions.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		623F648A51522D0CDD4FD2A9 /* Configurator */ = {
@@ -84,6 +169,14 @@
 				CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8844B39372289113A20178B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F0B176C197D1B936CD70130 /* Pods_Gleam.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8A02D387FA747E8683FF0A35 /* Presenter */ = {
@@ -95,22 +188,13 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		A6705A1BC1ADA9D34B8D08B5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DF6ACA1E756D9822795543B0 /* Pods-Gleam.debug.xcconfig */,
-				CB831FC7CFD113FF85509521 /* Pods-Gleam.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		D7FBBA372195C5E900410C10 = {
 			isa = PBXGroup;
 			children = (
 				D7FBBA422195C5E900410C10 /* Gleam */,
 				D7FBBA412195C5E900410C10 /* Products */,
-				A6705A1BC1ADA9D34B8D08B5 /* Pods */,
-				58CD71AAF493AA9C768A6C26 /* Frameworks */,
+				FD35F0C4E5A79D848032FC9B /* Pods */,
+				8844B39372289113A20178B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +215,7 @@
 				D7FBBA4A2195C5E900410C10 /* Assets.xcassets */,
 				D7FBBA4C2195C5E900410C10 /* LaunchScreen.storyboard */,
 				D7FBBA4F2195C5E900410C10 /* Info.plist */,
+				507989592195E57300A6BE9D /* Services */,
 				01ED58BD057BF270CC8799F7 /* Modules */,
 			);
 			path = Gleam;
@@ -177,6 +262,15 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		FD35F0C4E5A79D848032FC9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */,
+				10AE4856F788BAC8D2F095D5 /* Pods-Gleam.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,12 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7FBBA522195C5E900410C10 /* Build configuration list for PBXNativeTarget "Gleam" */;
 			buildPhases = (
-				6AE7226E7D72FF02B9D62F36 /* [CP] Check Pods Manifest.lock */,
+				43B10E3787EEBC7D379E12A2 /* [CP] Check Pods Manifest.lock */,
 				D7FBBA3C2195C5E900410C10 /* Sources */,
 				D7FBBA3D2195C5E900410C10 /* Frameworks */,
 				D7FBBA3E2195C5E900410C10 /* Resources */,
-				CA647DCBBD81BCEAF45AF799 /* [CP] Embed Pods Frameworks */,
 				D7E8477A2195CAD5007CB5C6 /* Linter Phase */,
+				CCC41E65A38C80C97F98C884 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,7 +342,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6AE7226E7D72FF02B9D62F36 /* [CP] Check Pods Manifest.lock */ = {
+		43B10E3787EEBC7D379E12A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,7 +360,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CA647DCBBD81BCEAF45AF799 /* [CP] Embed Pods Frameworks */ = {
+		CCC41E65A38C80C97F98C884 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,17 +423,27 @@
 			files = (
 				D7FBBA462195C5E900410C10 /* ViewController.swift in Sources */,
 				D7FBBA442195C5E900410C10 /* AppDelegate.swift in Sources */,
+				5079894F2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift in Sources */,
 				442D1C975F9E78A17C91BF6C /* ScreeningViewInput.swift in Sources */,
+				507989512195DC7400A6BE9D /* OnboardingModel.swift in Sources */,
 				C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */,
 				F27C83DA9F8083E6728F2232 /* ScreeningViewController.swift in Sources */,
 				9EC77543A841A2785E7F2A75 /* ScreeningModuleInput.swift in Sources */,
 				E7EC3E52C1B4C3EFF20B2932 /* ScreeningPresenter.swift in Sources */,
 				8A01DB8A0C8599AA8E103122 /* ScreeningInteractorInput.swift in Sources */,
+				507989572195E01500A6BE9D /* OnboardingConfigurator.swift in Sources */,
+				507989542195DCF900A6BE9D /* OnboardingPresenter.swift in Sources */,
+				504328AA2195EF11000FA9B7 /* OnboardingPageControl.swift in Sources */,
+				5079895C2195E58F00A6BE9D /* StyleExtensions.swift in Sources */,
 				83A5981978D43BC70F56A403 /* ScreeningInteractorOutput.swift in Sources */,
 				8B0798C7371363D33791C6FE /* ScreeningInteractor.swift in Sources */,
+				504328AF2195F7D2000FA9B7 /* CollectionSetupable.swift in Sources */,
 				BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */,
+				5079894C2195D5F100A6BE9D /* OnboardingViewController.swift in Sources */,
 				786EB5771481E18BCFBACA18 /* ScreeningRouter.swift in Sources */,
+				504328AD2195F7C3000FA9B7 /* Model.swift in Sources */,
 				86A2CC175BDFBA4D8BBF4AC7 /* ScreeningModuleConfigurator.swift in Sources */,
+				504328A82195E958000FA9B7 /* OnboardingCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +584,7 @@
 		};
 		D7FBBA532195C5E900410C10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF6ACA1E756D9822795543B0 /* Pods-Gleam.debug.xcconfig */;
+			baseConfigurationReference = A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -501,7 +605,7 @@
 		};
 		D7FBBA542195C5E900410C10 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB831FC7CFD113FF85509521 /* Pods-Gleam.release.xcconfig */;
+			baseConfigurationReference = 10AE4856F788BAC8D2F095D5 /* Pods-Gleam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
