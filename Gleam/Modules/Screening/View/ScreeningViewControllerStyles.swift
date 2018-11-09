@@ -179,7 +179,7 @@ extension StyleWrapper where Element: DiagnosisIndicatorView {
 
 // MARK: - implement styles for CaptureButton
 
-extension StyleWrapper where Element: CaptureButton  {
+extension StyleWrapper where Element: CaptureButton {
     
     static var captureButtonStyle: StyleWrapper {
         return .wrap { captureButton in
