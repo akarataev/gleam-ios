@@ -43,3 +43,11 @@ Pods/
 # Carthage/Checkouts
 
 Carthage/Build
+
+AppStore_ru\.apptolab\.Gleam\.mobileprovision
+
+Gleam\.app\.dSYM\.zip
+
+RXNHT537KW\.cer
+
+fastlane/report\.xml

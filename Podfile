@@ -11,7 +11,6 @@ target 'Gleam' do
   pod 'SnapKit', '~>4.2'
   pod 'RxSwift', '~>4.2'
   pod 'DTCollectionViewManager', '~> 6.4'
-  pod 'Reveal-SDK'
   pod 'HCSStarRatingView', '~> 1.5'
   pod 'Moya', '~> 11.0'
 end
