@@ -10,7 +10,8 @@
 import Foundation
 import UIKit
 
-//MARK: - ClinicListPresenter
+// MARK: - ClinicListPresenter
+
 class ClinicListPresenter {
     
     weak var view: ClinicListViewControllerInput?
