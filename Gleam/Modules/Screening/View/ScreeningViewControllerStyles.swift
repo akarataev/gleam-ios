@@ -200,3 +200,75 @@ extension StyleWrapper where Element: CaptureButton  {
         }
     }
 }
+
+
+// MARK: - implement styles for SegmentButton
+
+extension StyleWrapper where Element: UIButton {
+    
+    static var segmentButtonHighlightStyle: StyleWrapper {
+        return .wrap { segmentButton in
+            segmentButton.setTitleColor(.white, for: .normal)
+            segmentButton.titleLabel?.font = .hightlightButtonFont
+        }
+    }
+    
+    static var segmentButtonRegularStyle: StyleWrapper {
+        return .wrap { segmentButton in
+            segmentButton.setTitleColor(.assessmentColor, for: .normal)
+            segmentButton.titleLabel?.font = .regularButtonFont
+        }
+    }
+}
+
+
+// MARK: - implement styles for segment marker
+
+extension StyleWrapper where Element: UIView {
+    
+    static var segmentMarkerStyle: StyleWrapper {
+        return .wrap { captureMarker in captureMarker.backgroundColor = .spotButtonColor }
+    }
+    
+    static func segmentMarkerLayoutStyle(at view: UIView) -> StyleWrapper {
+        return .wrap { captureMarker in
+            captureMarker.snp.makeConstraints { make in
+                make.centerX.equalTo(view.snp.centerX)
+                make.bottom.equalTo(view.snp.bottom).offset(-112)
+                make.width.equalTo(62)
+                make.height.equalTo(3)
+            }
+        }
+    }
+}
+
+
+// MARK: - implement styles for CaptureModeSegment
+
+extension StyleWrapper where Element: CaptureModeSegment {
+    
+    static func captureSegmentLayoutStyle(at view: UIView) -> StyleWrapper {
+        return .wrap { captureSegment in
+            captureSegment.snp.makeConstraints { make in
+                make.centerX.equalTo(view.snp.centerX).offset(42)
+                make.bottom.equalTo(view.snp.bottom).offset(-131)
+                make.width.equalTo(127)
+                make.height.equalTo(20)
+            }
+            
+            captureSegment.applyStyles()
+        }
+    }
+    
+    static func captureSegmentOffsetStyle(at view: UIView, offset: Int) -> StyleWrapper {
+        return .wrap { captureSegment in
+            captureSegment.snp.removeConstraints()
+            captureSegment.snp.makeConstraints { make in
+                make.centerX.equalTo(view.snp.centerX).offset(offset)
+                make.bottom.equalTo(view.snp.bottom).offset(-131)
+                make.width.equalTo(127)
+                make.height.equalTo(20)
+            }
+        }
+    }
+}

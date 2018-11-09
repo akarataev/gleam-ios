@@ -19,5 +19,13 @@ extension UIFont {
     static var diagnosisFont: UIFont {
         return UIFont.systemFont(ofSize: 32, weight: .regular)
     }
+    
+    static var hightlightButtonFont: UIFont {
+        return UIFont.systemFont(ofSize: 19, weight: .regular)
+    }
+    
+    static var regularButtonFont: UIFont {
+        return UIFont.systemFont(ofSize: 16, weight: .medium)
+    }
 }
 

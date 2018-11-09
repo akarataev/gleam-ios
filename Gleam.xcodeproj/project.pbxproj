@@ -38,6 +38,7 @@
 		D7BF48B621961279006E7876 /* CircleIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B521961279006E7876 /* CircleIndicatorView.swift */; };
 		D7BF48B8219613D0006E7876 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B7219613D0006E7876 /* Fonts.swift */; };
 		D7BF48BB21961AC5006E7876 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48BA21961AC5006E7876 /* CaptureButton.swift */; };
+		D7BF48BE21961FB3006E7876 /* CaptureModeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48BD21961FB3006E7876 /* CaptureModeSegment.swift */; };
 		D7FBBA442195C5E900410C10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBBA432195C5E900410C10 /* AppDelegate.swift */; };
 		D7FBBA492195C5E900410C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA472195C5E900410C10 /* Main.storyboard */; };
 		D7FBBA4B2195C5E900410C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA4A2195C5E900410C10 /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		D7BF48B521961279006E7876 /* CircleIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleIndicatorView.swift; sourceTree = "<group>"; };
 		D7BF48B7219613D0006E7876 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		D7BF48BA21961AC5006E7876 /* CaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
+		D7BF48BD21961FB3006E7876 /* CaptureModeSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureModeSegment.swift; sourceTree = "<group>"; };
 		D7FBBA402195C5E900410C10 /* Gleam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gleam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FBBA432195C5E900410C10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7FBBA482195C5E900410C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		D7BF48A421960B5E006E7876 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D7BF48BC21961F9F006E7876 /* CaptureModeSegment */,
 				D7BF48B921961AB8006E7876 /* CaptureButton */,
 				D7BF48AC219610E8006E7876 /* IndicatorView */,
 				D7BF48A521960B74006E7876 /* CameraView */,
@@ -254,6 +257,14 @@
 				D7BF48BA21961AC5006E7876 /* CaptureButton.swift */,
 			);
 			path = CaptureButton;
+			sourceTree = "<group>";
+		};
+		D7BF48BC21961F9F006E7876 /* CaptureModeSegment */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF48BD21961FB3006E7876 /* CaptureModeSegment.swift */,
+			);
+			path = CaptureModeSegment;
 			sourceTree = "<group>";
 		};
 		D7FBBA372195C5E900410C10 = {
@@ -506,6 +517,7 @@
 				507989542195DCF900A6BE9D /* OnboardingPresenter.swift in Sources */,
 				504328AA2195EF11000FA9B7 /* OnboardingPageControl.swift in Sources */,
 				D7BF48A921960C3A006E7876 /* Styles.swift in Sources */,
+				D7BF48BE21961FB3006E7876 /* CaptureModeSegment.swift in Sources */,
 				5079895C2195E58F00A6BE9D /* StyleExtensions.swift in Sources */,
 				D7BF48B8219613D0006E7876 /* Fonts.swift in Sources */,
 				83A5981978D43BC70F56A403 /* ScreeningInteractorOutput.swift in Sources */,
@@ -667,7 +679,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = U67ZU8H7H4;
 				INFOPLIST_FILE = Gleam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -688,7 +700,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = U67ZU8H7H4;
 				INFOPLIST_FILE = Gleam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

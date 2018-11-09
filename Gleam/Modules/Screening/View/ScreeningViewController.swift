@@ -14,6 +14,7 @@ class ScreeningViewController: UIViewController, ScreeningViewInput {
     @objc var screeningView: VideoCapturePreviewLayer!
     var statusPanel: StatusIndicatorView!
     var captureButton: CaptureButton!
+    var modeSegmented: CaptureModeSegment!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,7 @@ extension ScreeningViewController {
         self.applyStatusPanelStyles()
         self.applyCaptureButtonStyles()
         self.addCaptureButtonTarget()
+        self.applyModeSegmentedStyles()
     }
 
     func applyScreeningViewStyles() {
@@ -69,6 +71,15 @@ extension ScreeningViewController {
             self,
             action: #selector(captureButtonDidTap(_:)),
             for: .touchUpInside
+        )
+    }
+    
+    func applyModeSegmentedStyles() {
+        self.modeSegmented = CaptureModeSegment()
+        self.modeSegmented.parentView = view
+        self.view.addSubview(modeSegmented)
+        self.modeSegmented.apply (
+            .captureSegmentLayoutStyle(at: view)
         )
     }
 }
