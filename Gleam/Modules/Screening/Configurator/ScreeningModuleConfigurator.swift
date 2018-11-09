@@ -8,8 +8,44 @@
 
 import UIKit
 import Typhoon
+import AVKit
 
 class ScreeningModuleConfigurator: TyphoonAssembly {
+    
+    @objc public dynamic func configurateVideoCaptureSession() -> Any {
+        return TyphoonDefinition.withClass(VideoCaptureSession.self)
+    }
+    
+    @objc public dynamic func configurateAVCaptureVideoPreviewLayer() -> Any {
+        return TyphoonDefinition.withClass(AVCaptureVideoPreviewLayer.self) {
+            definition in
+            definition?.useInitializer(#selector(AVCaptureVideoPreviewLayer.init(session:))) {
+                initializer in
+                initializer?.injectParameter(
+                    with: self.configurateVideoCaptureSession()
+                )
+            }
+        }
+    }
+    
+    @objc public dynamic func configureVideoCapturePreviewLayer() -> Any {
+        return TyphoonDefinition.withClass(VideoCapturePreviewLayer.self) {
+            definition in
+            definition?.injectProperty(
+                Selector(("captureSession")),
+                with: self.configurateVideoCaptureSession()
+            )
+            definition?.injectProperty(
+                Selector(("previewLayer")),
+                with: self.configurateAVCaptureVideoPreviewLayer()
+            )
+            definition?.perform(
+                afterInjections: #selector(
+                    VideoCapturePreviewLayer.self.prepareForCaptureVideo
+                )
+            )
+        }
+    }
 
     @objc public dynamic func configureScreeningViewController() -> Any {
         return TyphoonDefinition.withClass(ScreeningViewController.self) {
@@ -17,6 +53,10 @@ class ScreeningModuleConfigurator: TyphoonAssembly {
             definition?.injectProperty(
                 Selector(("output")),
                 with: self.configureScreeningPresenter()
+            )
+            definition?.injectProperty (
+                Selector(("screeningView")),
+                with: self.configureVideoCapturePreviewLayer()
             )
         }
     }
