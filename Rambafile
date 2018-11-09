@@ -1,0 +1,23 @@
+### Headers settings
+company: Apptolab
+
+### Xcode project settings
+project_name: Gleam
+xcodeproj_path: Gleam.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: Gleam
+
+# The file path for new modules
+project_file_path: Gleam/Modules
+
+# The Xcode group path to new modules
+project_group_path: Gleam/Modules
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+templates:
+- { name: 'typhoon-viper', git: 'https://github.com/askarataev/typhoon-viper.git' }

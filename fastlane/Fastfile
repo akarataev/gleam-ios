@@ -1,0 +1,144 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+
+platform :ios do
+
+    before_all do
+        cocoapods(clean: true)
+        increment_build_number
+    end
+
+
+# MARK :- implement test lane error handling
+
+    lane :test do |options|
+        begin
+            test_lane(
+                scheme: options[:scheme],
+                teamid: options[:teamid],
+                webhook: options[:webhook]
+            )
+        rescue => exception
+            slack(
+                message: "Test lane did failed, becouse: #{exception.to_s}",
+                success: false,
+                slack_url: "https://hooks.slack.com/services/#{options[:webhook]}"
+            )
+        end
+    end
+
+
+# MARK :- implement test lane
+
+    lane :test_lane do |options|
+
+        puts("run test 🚀 lane, please wait..")
+
+        teamid = options[:teamid]
+        scheme = options[:scheme]
+
+        update_project_team(
+            path: "#{scheme}.xcodeproj",
+            teamid: teamid
+        )
+
+        mess = swiftlint(
+            mode: :lint,
+            output_file: "swiftlint.result.json",
+            config_file: ".swiftlint.yml",
+            ignore_exit_status: false
+        )
+
+        run_tests(
+            workspace: "#{scheme}.xcworkspace",
+            scheme: scheme,
+            clean: true
+        )
+
+        slack(
+            message: "Test lane did completion 🚀",
+            success: true,
+            slack_url: "https://hooks.slack.com/services/#{options[:webhook]}"
+        )
+
+    end
+
+
+# MARK :- implement delivery lane error handling
+
+    lane :build do |options|
+        begin
+            build_lane(
+                scheme: options[:scheme],
+                username: options[:username],
+                webhook: options[:webhook],
+                bundleId: options[:bundleId]
+            )
+        rescue => exception
+            slack(
+                message: "Delivery lane did failed, becouse: #{exception.to_s}",
+                success: false,
+                slack_url: "https://hooks.slack.com/services/#{options[:webhook]}"
+            )
+        end
+    end
+
+
+# MARK :- implement delivery lane
+
+    lane :build_lane do |options|
+
+        puts("run delivery 🚀 lane, please wait..")
+
+        scheme = options[:scheme]
+        username = options[:username]
+        bundleId = options[:bundleId]
+
+        get_certificates(
+        	username: username
+        )
+
+
+    		get_provisioning_profile(
+    			username: username,
+    			app_identifier: bundleId
+    		)
+
+        build_app(
+            scheme: scheme,
+            export_method: "app-store",
+            configuration: "Release",
+            workspace: "#{scheme}.xcworkspace",
+            include_bitcode: true
+        )
+
+        upload_to_testflight(
+        	username: username,
+        	app_identifier: bundleId,
+            skip_waiting_for_build_processing: true
+        )
+
+        slack(
+            message: "Build success upload to TestFlight 🚀",
+            success: true,
+            slack_url: "https://hooks.slack.com/services/#{options[:webhook]}"
+        )
+
+    end
+
+end
