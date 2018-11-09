@@ -1,0 +1,47 @@
+//
+//  CaptureButton.swift
+//  Gleam
+//
+//  Created by Каратаев Алексей on 09.11.2018.
+//  Copyright © 2018 Alexey Karataev. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class CaptureButton: UIButton {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        let buttonView = CircleIndicatorView.buttonView
+        buttonView.isUserInteractionEnabled = false
+        addSubview(buttonView)
+        buttonView.apply(.baseButtonViewLayoutStyle(at: self))
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+}
+
+
+// MARK: - implement pulse animation
+
+extension CaptureButton {
+    
+    func startPulseAnimation(tacts: Int) {
+        guard tacts > 0 else { return }
+        UIView.animate(withDuration: 0.3, animations: {
+            self.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        }, completion: { finished in
+            UIView.animate(withDuration: 0.3, animations: {
+                self.transform = .identity
+            }, completion: { finished in
+                self.startPulseAnimation(tacts: tacts - 1)
+            })
+        })
+        
+        
+    }
+}
+
