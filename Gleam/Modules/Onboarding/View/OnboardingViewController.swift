@@ -47,10 +47,6 @@ class OnboardingViewController: UIViewController {
         collectionView.register(OnboardingCollectionViewCell.self, forCellWithReuseIdentifier: "OnboardingCollectionViewCell")
     }
     
-    private func handlePaging() {
-        
-    }
-    
     @objc func nextButtonTapped() {
         output.onboardingViewControllerTapNext(self, collectionView: collectionView)
     }
@@ -65,7 +61,7 @@ extension OnboardingViewController: OnboardingViewControllerInput {
     }
     
     func openMainScreen() {
-        // TODO: - Open main screen
+        performSegue(withIdentifier: "showMainScreen", sender: nil)
     }
 }
 
