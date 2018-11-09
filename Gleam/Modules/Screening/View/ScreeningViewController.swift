@@ -12,6 +12,7 @@ class ScreeningViewController: UIViewController, ScreeningViewInput {
 
     @objc var output: ScreeningViewOutput!
     @objc var screeningView: VideoCapturePreviewLayer!
+    var statusPanel: StatusIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class ScreeningViewController: UIViewController, ScreeningViewInput {
 
     func setupInitialState() {
         self.screeningView.startCapture()
+        self.statusPanel.indicate()
     }
 }
 
@@ -31,6 +33,7 @@ extension ScreeningViewController {
 
     func applyStyles() {
         self.applyScreeningViewStyles()
+        self.applyStatusPanelStyles()
     }
 
     func applyScreeningViewStyles() {
@@ -38,6 +41,14 @@ extension ScreeningViewController {
         self.screeningView.apply (
             .screeningViewStyle,
             .screeningViewLayoutStyle(at: view)
+        )
+    }
+    
+    func applyStatusPanelStyles() {
+        self.statusPanel = StatusIndicatorView()
+        self.view.addSubview(statusPanel)
+        self.statusPanel.apply (
+            .statusPanelLayoutStyle(at: view)
         )
     }
 }
