@@ -32,5 +32,13 @@ extension UIColor {
     static var diagnosisLabelColor: UIColor {
         return UIColor(red: 102 / 255, green: 102 / 255, blue: 102 / 255, alpha: 1)
     }
+    
+    static var baseButtonColor: UIColor {
+        return UIColor (red: 17 / 255, green: 181 / 255, blue: 226 / 255, alpha: 0.7)
+    }
+    
+    static var spotButtonColor: UIColor {
+        return UIColor (red: 18 / 255, green: 204 / 255, blue: 255 / 255, alpha: 1)
+    }
 }
 

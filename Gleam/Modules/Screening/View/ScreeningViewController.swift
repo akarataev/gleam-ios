@@ -13,6 +13,7 @@ class ScreeningViewController: UIViewController, ScreeningViewInput {
     @objc var output: ScreeningViewOutput!
     @objc var screeningView: VideoCapturePreviewLayer!
     var statusPanel: StatusIndicatorView!
+    var captureButton: CaptureButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,8 @@ extension ScreeningViewController {
     func applyStyles() {
         self.applyScreeningViewStyles()
         self.applyStatusPanelStyles()
+        self.applyCaptureButtonStyles()
+        self.addCaptureButtonTarget()
     }
 
     func applyScreeningViewStyles() {
@@ -50,5 +53,32 @@ extension ScreeningViewController {
         self.statusPanel.apply (
             .statusPanelLayoutStyle(at: view)
         )
+    }
+    
+    func applyCaptureButtonStyles() {
+        self.captureButton = CaptureButton()
+        self.view.addSubview(captureButton)
+        self.captureButton.apply (
+            .captureButtonStyle,
+            .captureButtonLayoutStyle(at: statusPanel)
+        )
+    }
+    
+    func addCaptureButtonTarget() {
+        self.captureButton.addTarget (
+            self,
+            action: #selector(captureButtonDidTap(_:)),
+            for: .touchUpInside
+        )
+    }
+}
+
+
+// MARK: - implement capture button handler
+
+extension ScreeningViewController {
+    
+    @objc func captureButtonDidTap(_ sender: CaptureButton) {
+
     }
 }

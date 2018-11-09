@@ -37,8 +37,8 @@
 		D7BF48B42196122F006E7876 /* DiagnosisIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B32196122F006E7876 /* DiagnosisIndicatorView.swift */; };
 		D7BF48B621961279006E7876 /* CircleIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B521961279006E7876 /* CircleIndicatorView.swift */; };
 		D7BF48B8219613D0006E7876 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B7219613D0006E7876 /* Fonts.swift */; };
+		D7BF48BB21961AC5006E7876 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48BA21961AC5006E7876 /* CaptureButton.swift */; };
 		D7FBBA442195C5E900410C10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBBA432195C5E900410C10 /* AppDelegate.swift */; };
-		D7FBBA462195C5E900410C10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBBA452195C5E900410C10 /* ViewController.swift */; };
 		D7FBBA492195C5E900410C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA472195C5E900410C10 /* Main.storyboard */; };
 		D7FBBA4B2195C5E900410C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA4A2195C5E900410C10 /* Assets.xcassets */; };
 		D7FBBA4E2195C5E900410C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA4C2195C5E900410C10 /* LaunchScreen.storyboard */; };
@@ -80,9 +80,9 @@
 		D7BF48B32196122F006E7876 /* DiagnosisIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisIndicatorView.swift; sourceTree = "<group>"; };
 		D7BF48B521961279006E7876 /* CircleIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleIndicatorView.swift; sourceTree = "<group>"; };
 		D7BF48B7219613D0006E7876 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		D7BF48BA21961AC5006E7876 /* CaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
 		D7FBBA402195C5E900410C10 /* Gleam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gleam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FBBA432195C5E900410C10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7FBBA452195C5E900410C10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D7FBBA482195C5E900410C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7FBBA4A2195C5E900410C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7FBBA4D2195C5E900410C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -223,6 +223,7 @@
 		D7BF48A421960B5E006E7876 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D7BF48B921961AB8006E7876 /* CaptureButton */,
 				D7BF48AC219610E8006E7876 /* IndicatorView */,
 				D7BF48A521960B74006E7876 /* CameraView */,
 			);
@@ -247,6 +248,14 @@
 			path = IndicatorView;
 			sourceTree = "<group>";
 		};
+		D7BF48B921961AB8006E7876 /* CaptureButton */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF48BA21961AC5006E7876 /* CaptureButton.swift */,
+			);
+			path = CaptureButton;
+			sourceTree = "<group>";
+		};
 		D7FBBA372195C5E900410C10 = {
 			isa = PBXGroup;
 			children = (
@@ -269,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				D7FBBA432195C5E900410C10 /* AppDelegate.swift */,
-				D7FBBA452195C5E900410C10 /* ViewController.swift */,
 				D7FBBA472195C5E900410C10 /* Main.storyboard */,
 				D7FBBA4A2195C5E900410C10 /* Assets.xcassets */,
 				D7FBBA4C2195C5E900410C10 /* LaunchScreen.storyboard */,
@@ -481,7 +489,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7FBBA462195C5E900410C10 /* ViewController.swift in Sources */,
 				D7BF48B2219611CD006E7876 /* Colors.swift in Sources */,
 				D7FBBA442195C5E900410C10 /* AppDelegate.swift in Sources */,
 				5079894F2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift in Sources */,
@@ -510,6 +517,7 @@
 				786EB5771481E18BCFBACA18 /* ScreeningRouter.swift in Sources */,
 				504328AD2195F7C3000FA9B7 /* Model.swift in Sources */,
 				D7BF48B42196122F006E7876 /* DiagnosisIndicatorView.swift in Sources */,
+				D7BF48BB21961AC5006E7876 /* CaptureButton.swift in Sources */,
 				86A2CC175BDFBA4D8BBF4AC7 /* ScreeningModuleConfigurator.swift in Sources */,
 				504328A82195E958000FA9B7 /* OnboardingCollectionView.swift in Sources */,
 				D7BF48B621961279006E7876 /* CircleIndicatorView.swift in Sources */,

@@ -41,3 +41,24 @@ extension CircleIndicatorView {
     }
 }
 
+
+// MARK: - implement return CircleIndicatorView as buttonView
+
+extension CircleIndicatorView {
+    
+    static var buttonView: CircleIndicatorView {
+        let base = getCircle(size: 88)
+        let spot = getCircle(size: 56)
+        
+        base.addSubview(spot)
+        base.apply (.baseButtonViewStyle)
+        
+        spot.apply (
+            .spotButtonViewStyle,
+            .spotButtonViewLayoutStyle(at: base)
+        )
+        
+        return base
+    }
+}
+

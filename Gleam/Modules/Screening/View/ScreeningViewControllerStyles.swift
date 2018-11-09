@@ -63,6 +63,36 @@ extension StyleWrapper where Element: CircleIndicatorView {
             }
         }
     }
+    
+    static var spotButtonViewStyle: StyleWrapper {
+        return .wrap { spotButtonView in spotButtonView.backgroundColor = .spotButtonColor }
+    }
+    
+    static func spotButtonViewLayoutStyle(at view: UIView) -> StyleWrapper {
+        return .wrap { spotButtonView in
+            spotButtonView.snp.makeConstraints { make in
+                make.centerX.equalTo(view.snp.centerX)
+                make.centerY.equalTo(view.snp.centerY)
+                make.width.equalTo(56)
+                make.height.equalTo(56)
+            }
+        }
+    }
+    
+    static var baseButtonViewStyle: StyleWrapper {
+        return .wrap { baseButtonView in baseButtonView.backgroundColor = .baseButtonColor }
+    }
+    
+    static func baseButtonViewLayoutStyle(at view: UIView) -> StyleWrapper {
+        return .wrap { baseButtonView in
+            baseButtonView.snp.makeConstraints { make in
+                make.centerX.equalTo(view.snp.centerX)
+                make.centerY.equalTo(view.snp.centerY)
+                make.width.equalTo(88)
+                make.height.equalTo(88)
+            }
+        }
+    }
 }
 
 
@@ -141,6 +171,31 @@ extension StyleWrapper where Element: DiagnosisIndicatorView {
                 make.bottom.equalTo(view.snp.bottom).offset(-24)
                 make.width.equalTo(width)
                 make.height.equalTo(38)
+            }
+        }
+    }
+}
+
+
+// MARK: - implement styles for CaptureButton
+
+extension StyleWrapper where Element: CaptureButton  {
+    
+    static var captureButtonStyle: StyleWrapper {
+        return .wrap { captureButton in
+            captureButton.frame = CGRect (
+                origin: .zero, size: CGSize(width: 88, height: 88)
+            )
+        }
+    }
+    
+    static func captureButtonLayoutStyle(at view: UIView) -> StyleWrapper {
+        return .wrap { captureButton in
+            captureButton.snp.makeConstraints { make in
+                make.centerX.equalTo(view.snp.centerX)
+                make.bottom.equalTo(view.snp.top).offset(-71)
+                make.width.equalTo(88)
+                make.height.equalTo(88)
             }
         }
     }
