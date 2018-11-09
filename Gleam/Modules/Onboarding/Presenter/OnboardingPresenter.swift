@@ -56,7 +56,6 @@ extension OnboardingPresenter: OnboardingViewControllerOutput {
             let indexPath = collectionView.indexPath(for: cell),
             let currentCell = getCurrentCell(collectionView) else { return }
         page = indexPath.row
-        print(page)
         view.scrollToPage(page: page, buttonTitle: currentCell.buttonTtitle)
     }
     

@@ -21,7 +21,7 @@
                         <viewLayoutGuide key="safeArea" id="V5e-xe-pbR"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" id="9dx-88-LjF"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showMainScreen" id="9dx-88-LjF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4Q-Ew-7R8" userLabel="First Responder" sceneMemberID="firstResponder"/>
