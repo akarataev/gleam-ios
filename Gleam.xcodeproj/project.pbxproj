@@ -28,7 +28,6 @@
 		507989512195DC7400A6BE9D /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989502195DC7400A6BE9D /* OnboardingModel.swift */; };
 		507989542195DCF900A6BE9D /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989532195DCF900A6BE9D /* OnboardingPresenter.swift */; };
 		507989572195E01500A6BE9D /* OnboardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989562195E01500A6BE9D /* OnboardingConfigurator.swift */; };
-		5079895C2195E58F00A6BE9D /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079895B2195E58F00A6BE9D /* StyleExtensions.swift */; };
 		6C064104B68DB404FDCFDBB8 /* Pods_Gleam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B176C197D1B936CD70130 /* Pods_Gleam.framework */; };
 		786EB5771481E18BCFBACA18 /* ScreeningRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161852760482C25BFBD8C1D3 /* ScreeningRouter.swift */; };
 		83A5981978D43BC70F56A403 /* ScreeningInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A71233AAD851C4155E9397 /* ScreeningInteractorOutput.swift */; };
@@ -38,6 +37,7 @@
 		9EC77543A841A2785E7F2A75 /* ScreeningModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A04FA7B2A8367F470A21D9 /* ScreeningModuleInput.swift */; };
 		BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */; };
 		C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */; };
+		D71EABBE21963AEC00EBE287 /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */; };
 		D7BF48A321960B13006E7876 /* VideoCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */; };
 		D7BF48A721960B86006E7876 /* VideoCapturePreviewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */; };
 		D7BF48A921960C3A006E7876 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A821960C3A006E7876 /* Styles.swift */; };
@@ -87,12 +87,12 @@
 		507989502195DC7400A6BE9D /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		507989532195DCF900A6BE9D /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		507989562195E01500A6BE9D /* OnboardingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConfigurator.swift; sourceTree = "<group>"; };
-		5079895B2195E58F00A6BE9D /* StyleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
 		57A04FA7B2A8367F470A21D9 /* ScreeningModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningModuleInput.swift; sourceTree = "<group>"; };
 		82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningRouterInput.swift; sourceTree = "<group>"; };
 		87B46E5DBB9EDA2F79F8194E /* ScreeningInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningInteractor.swift; sourceTree = "<group>"; };
 		A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.debug.xcconfig"; sourceTree = "<group>"; };
 		CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningModuleConfigurator.swift; sourceTree = "<group>"; };
+		D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
 		D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureSession.swift; sourceTree = "<group>"; };
 		D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapturePreviewLayer.swift; sourceTree = "<group>"; };
 		D7BF48A821960C3A006E7876 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
@@ -270,7 +270,7 @@
 		5079895A2195E57D00A6BE9D /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				5079895B2195E58F00A6BE9D /* StyleExtensions.swift */,
+				D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */,
 				D7BF48A821960C3A006E7876 /* Styles.swift */,
 				D7BF48B1219611CD006E7876 /* Colors.swift */,
 				D7BF48B7219613D0006E7876 /* Fonts.swift */,
@@ -609,14 +609,13 @@
 				504328B821960E4E000FA9B7 /* ClinicListHeaderView.swift in Sources */,
 				504328AA2195EF11000FA9B7 /* OnboardingPageControl.swift in Sources */,
 				504328BE219615A8000FA9B7 /* ClinicModel.swift in Sources */,
-				5079895C2195E58F00A6BE9D /* StyleExtensions.swift in Sources */,
 				504328C521961663000FA9B7 /* NetworkManager.swift in Sources */,
 				504328CC21961B4E000FA9B7 /* ClinicListConfigurator.swift in Sources */,
 				504328B221960CD2000FA9B7 /* ClinicListViewController.swift in Sources */,
+				D71EABBE21963AEC00EBE287 /* StyleExtensions.swift in Sources */,
 				504328C921961A80000FA9B7 /* ClinicListPresenter.swift in Sources */,
 				D7BF48A921960C3A006E7876 /* Styles.swift in Sources */,
 				D7BF48BE21961FB3006E7876 /* CaptureModeSegment.swift in Sources */,
-				5079895C2195E58F00A6BE9D /* StyleExtensions.swift in Sources */,
 				D7BF48B8219613D0006E7876 /* Fonts.swift in Sources */,
 				83A5981978D43BC70F56A403 /* ScreeningInteractorOutput.swift in Sources */,
 				D7BF48AB21960CF0006E7876 /* ScreeningViewControllerStyles.swift in Sources */,

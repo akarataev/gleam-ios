@@ -71,7 +71,7 @@ private extension ClinicListHeaderView {
                 .compactMap { $0 }
                 .forEach {
                     $0.backgroundColor = UIColor.Gleam.blueGrey.withAlphaComponent(0.12)
-                    $0.attributedPlaceholder = NSAttributedString(string: "Search", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+                    $0.attributedPlaceholder = NSAttributedString(string: "Search", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
                 }
         }
         
