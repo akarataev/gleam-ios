@@ -27,6 +27,10 @@
 		9EC77543A841A2785E7F2A75 /* ScreeningModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A04FA7B2A8367F470A21D9 /* ScreeningModuleInput.swift */; };
 		BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */; };
 		C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */; };
+		D7BF48A321960B13006E7876 /* VideoCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */; };
+		D7BF48A721960B86006E7876 /* VideoCapturePreviewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */; };
+		D7BF48A921960C3A006E7876 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A821960C3A006E7876 /* Styles.swift */; };
+		D7BF48AB21960CF0006E7876 /* ScreeningViewControllerStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48AA21960CF0006E7876 /* ScreeningViewControllerStyles.swift */; };
 		D7FBBA442195C5E900410C10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBBA432195C5E900410C10 /* AppDelegate.swift */; };
 		D7FBBA462195C5E900410C10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBBA452195C5E900410C10 /* ViewController.swift */; };
 		D7FBBA492195C5E900410C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA472195C5E900410C10 /* Main.storyboard */; };
@@ -60,6 +64,10 @@
 		87B46E5DBB9EDA2F79F8194E /* ScreeningInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningInteractor.swift; sourceTree = "<group>"; };
 		A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.debug.xcconfig"; sourceTree = "<group>"; };
 		CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningModuleConfigurator.swift; sourceTree = "<group>"; };
+		D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureSession.swift; sourceTree = "<group>"; };
+		D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapturePreviewLayer.swift; sourceTree = "<group>"; };
+		D7BF48A821960C3A006E7876 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		D7BF48AA21960CF0006E7876 /* ScreeningViewControllerStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreeningViewControllerStyles.swift; sourceTree = "<group>"; };
 		D7FBBA402195C5E900410C10 /* Gleam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gleam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FBBA432195C5E900410C10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7FBBA452195C5E900410C10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +158,7 @@
 		507989592195E57300A6BE9D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D7BF48A121960AF5006E7876 /* Video */,
 				5079895A2195E57D00A6BE9D /* Styles */,
 			);
 			path = Services;
@@ -159,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				5079895B2195E58F00A6BE9D /* StyleExtensions.swift */,
+				D7BF48A821960C3A006E7876 /* Styles.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -188,6 +198,30 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		D7BF48A121960AF5006E7876 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		D7BF48A421960B5E006E7876 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF48A521960B74006E7876 /* CameraView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D7BF48A521960B74006E7876 /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */,
+			);
+			path = CameraView;
+			sourceTree = "<group>";
+		};
 		D7FBBA372195C5E900410C10 = {
 			isa = PBXGroup;
 			children = (
@@ -215,8 +249,9 @@
 				D7FBBA4A2195C5E900410C10 /* Assets.xcassets */,
 				D7FBBA4C2195C5E900410C10 /* LaunchScreen.storyboard */,
 				D7FBBA4F2195C5E900410C10 /* Info.plist */,
-				507989592195E57300A6BE9D /* Services */,
 				01ED58BD057BF270CC8799F7 /* Modules */,
+				507989592195E57300A6BE9D /* Services */,
+				D7BF48A421960B5E006E7876 /* Components */,
 			);
 			path = Gleam;
 			sourceTree = "<group>";
@@ -248,6 +283,7 @@
 				2C85D64B0409E8631E3C3012 /* ScreeningViewInput.swift */,
 				1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */,
 				1F43B77C40F753204C9EBC8D /* ScreeningViewController.swift */,
+				D7BF48AA21960CF0006E7876 /* ScreeningViewControllerStyles.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -424,16 +460,20 @@
 				5079894F2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift in Sources */,
 				442D1C975F9E78A17C91BF6C /* ScreeningViewInput.swift in Sources */,
 				507989512195DC7400A6BE9D /* OnboardingModel.swift in Sources */,
+				D7BF48A721960B86006E7876 /* VideoCapturePreviewLayer.swift in Sources */,
 				C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */,
 				F27C83DA9F8083E6728F2232 /* ScreeningViewController.swift in Sources */,
 				9EC77543A841A2785E7F2A75 /* ScreeningModuleInput.swift in Sources */,
 				E7EC3E52C1B4C3EFF20B2932 /* ScreeningPresenter.swift in Sources */,
 				8A01DB8A0C8599AA8E103122 /* ScreeningInteractorInput.swift in Sources */,
 				507989572195E01500A6BE9D /* OnboardingConfigurator.swift in Sources */,
+				D7BF48A321960B13006E7876 /* VideoCaptureSession.swift in Sources */,
 				507989542195DCF900A6BE9D /* OnboardingPresenter.swift in Sources */,
 				504328AA2195EF11000FA9B7 /* OnboardingPageControl.swift in Sources */,
+				D7BF48A921960C3A006E7876 /* Styles.swift in Sources */,
 				5079895C2195E58F00A6BE9D /* StyleExtensions.swift in Sources */,
 				83A5981978D43BC70F56A403 /* ScreeningInteractorOutput.swift in Sources */,
+				D7BF48AB21960CF0006E7876 /* ScreeningViewControllerStyles.swift in Sources */,
 				8B0798C7371363D33791C6FE /* ScreeningInteractor.swift in Sources */,
 				504328AF2195F7D2000FA9B7 /* CollectionSetupable.swift in Sources */,
 				BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */,

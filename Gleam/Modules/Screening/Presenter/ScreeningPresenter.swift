@@ -15,7 +15,7 @@ class ScreeningPresenter: NSObject, ScreeningModuleInput, ScreeningViewOutput, S
     @objc var router: ScreeningRouterInput!
 
     func viewIsReady() {
-        print("Screening module run")
+        view.setupInitialState()
     }
 }
 
