@@ -13,6 +13,7 @@ import UIKit
 protocol ClinicListViewControllerInput: class {
     func renderClinics()
     func renderError(description: String)
+    func navigateToUserFlow(userData: UserFlowData)
 }
 
 // MARK: - ClinicListViewControllerOutput
@@ -21,6 +22,7 @@ protocol ClinicListViewControllerOutput: class {
     func clinicListViewControllerGetRows(_ view: ClinicListViewController) -> Int
     func clinicListViewControllerGetCell(_ view: ClinicListViewController, tableView: UITableView, indexPath: IndexPath) -> ClinicTableViewCell
     func clinicListViewControllerLoadWithFilter(_ view: ClinicListViewController, text: String)
+    func clinicListViewControllerDidSelectedClinic(_ view: ClinicListViewController, indexPath: IndexPath)
 }
 
 // MARK: - ClinicListViewController
@@ -46,6 +48,14 @@ class ClinicListViewController: UIViewController {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    func showAlert(success: Bool) {
+        let title = success ? "Message" : "Error"
+        let message = success ? "Application successfully submitted" : "Something goes wrong, please try again later"
+        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .cancel))
+        present(alertVC, animated: true)
     }
 }
 
@@ -109,6 +119,7 @@ extension ClinicListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        output.clinicListViewControllerDidSelectedClinic(self, indexPath: indexPath)
     }
 }
 
@@ -136,6 +147,11 @@ extension ClinicListViewController: ClinicListViewControllerInput {
         let alertViewController = UIAlertController(title: "Error", message: description, preferredStyle: .alert)
         alertViewController.addAction(UIAlertAction(title: "OK", style: .cancel))
         present(alertViewController, animated: true)
+    }
+    
+    func navigateToUserFlow(userData: UserFlowData) {
+        let userFlowVC = UserFlowConfigurator.configure(currentState: .name, userData: userData)
+        navigationController?.pushViewController(userFlowVC, animated: true)
     }
 }
 

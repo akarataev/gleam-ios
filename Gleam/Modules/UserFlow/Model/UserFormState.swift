@@ -7,3 +7,31 @@
 //
 
 import Foundation
+
+enum UserFormState {
+    case name
+    case number
+    case email
+    
+    func getTitle() -> String {
+        switch self {
+        case .name:
+            return "Your name"
+        case .number:
+            return "Your number"
+        case .email:
+            return "Your email"
+        }
+    }
+    
+    func getPlaceholder() -> String {
+        switch self {
+        case .name:
+            return "Enter your name"
+        case .number:
+            return "Enter your phone number"
+        case .email:
+            return "Enter your email"
+        }
+    }
+}

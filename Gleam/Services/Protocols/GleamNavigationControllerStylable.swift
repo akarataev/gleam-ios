@@ -11,6 +11,7 @@ import UIKit
 
 protocol GleamNavigationControllerStylable {
     func setupNavigationBarForClinicListViewController()
+    func setupNavigationBarForUserFlowViewController()
 }
 
 extension GleamNavigationControllerStylable where Self: UIViewController {
@@ -20,5 +21,13 @@ extension GleamNavigationControllerStylable where Self: UIViewController {
         navigationController?.navigationBar.barTintColor = UIColor.Gleam.neonBlue
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.layer.backgroundColor = UIColor.Gleam.neonBlue.cgColor
+    }
+    
+    func setupNavigationBarForUserFlowViewController() {
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.layer.backgroundColor = UIColor.white.cgColor
     }
 }

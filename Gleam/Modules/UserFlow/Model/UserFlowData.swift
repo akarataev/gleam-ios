@@ -12,6 +12,7 @@ class UserFlowData {
     var name = ""
     var number = ""
     var email = ""
+    var clinicId = 0
     
     func validatedPhoneNumber() -> Bool {
         let phoneRegex = "\\A[0-9]{11}\\z"
@@ -25,5 +26,12 @@ class UserFlowData {
         let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
         let result = emailTest.evaluate(with: email)
         return result
+    }
+    
+    func makeJSON() -> [String: Any] {
+        return ["name": name,
+                "phone": number,
+                "email": email,
+                "clinicId": clinicId]
     }
 }

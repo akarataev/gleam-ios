@@ -11,6 +11,7 @@ import Result
 
 enum HealthService {
     case getClinics
+    case sendUserData(UserFlowData)
 }
 
 extension HealthService: TargetType {
@@ -23,6 +24,8 @@ extension HealthService: TargetType {
         switch self {
         case .getClinics:
             return "clinics"
+        case .sendUserData:
+            return "appointments"
         }
     }
     
@@ -30,6 +33,8 @@ extension HealthService: TargetType {
         switch self {
         case .getClinics:
             return .get
+        case .sendUserData:
+            return .post
         }
     }
     
@@ -41,11 +46,13 @@ extension HealthService: TargetType {
         switch self {
         case .getClinics:
             return .requestPlain
+        case .sendUserData(let data):
+            return .requestParameters(parameters: data.makeJSON(), encoding: JSONEncoding.default)
         }
     }
     
     var headers: [String: String]? {
-        return nil
+        return ["Content-Type": "application/json"]
     }
     
     var validationType: ValidationType {
