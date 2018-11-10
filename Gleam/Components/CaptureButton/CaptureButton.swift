@@ -29,15 +29,15 @@ class CaptureButton: UIButton {
 
 extension CaptureButton {
     
-    func startPulseAnimation(tacts: Int) {
-        guard tacts > 0 else { return }
+    func repeatPulseAnimation(count: Int) {
+        guard count > 0 else { return }
         UIView.animate(withDuration: 0.3, animations: {
             self.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
         }, completion: { finished in
             UIView.animate(withDuration: 0.3, animations: {
                 self.transform = .identity
             }, completion: { finished in
-                self.startPulseAnimation(tacts: tacts - 1)
+                self.repeatPulseAnimation(count: count - 1)
             })
         })
         
