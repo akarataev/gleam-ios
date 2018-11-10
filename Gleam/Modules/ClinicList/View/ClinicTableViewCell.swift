@@ -43,6 +43,11 @@ class ClinicTableViewCell: UITableViewCell, CollectionSetupable {
         super.setSelected(selected, animated: animated)
         clinicOpenStatusView.backgroundColor = viewModel.statusColor
     }
+    
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        super.setHighlighted(highlighted, animated: animated)
+        clinicOpenStatusView.backgroundColor = viewModel.statusColor
+    }
 }
 
 private extension ClinicTableViewCell {
