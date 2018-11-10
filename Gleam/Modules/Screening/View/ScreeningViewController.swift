@@ -12,9 +12,12 @@ class ScreeningViewController: UIViewController, ScreeningViewInput {
 
     @objc var output: ScreeningViewOutput!
     @objc var screeningView: VideoCapturePreviewLayer!
-    var statusPanel: StatusIndicatorView!
     var captureButton: CaptureButton!
     var modeSegmented: CaptureModeSegment!
+    
+    var statusPanel: StatusIndicatorView! {
+        didSet { statusPanel.delegate = self }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +48,9 @@ extension ScreeningViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.setNavigationBarHidden (
+            true, animated: true
+        )
     }
 }
 
@@ -110,11 +115,10 @@ extension ScreeningViewController {
 
 extension ScreeningViewController {
     
-    @objc func captureButtonDidTap(_ sender: CaptureButton) {
-        self.output.routeToClinicScreen()
-//        self.statusPanel.indicate()
-//        self.selectCaptureButtonAnimation(for: sender)
-//        self.output.userRequestImageProcessing(mode: modeSegmented.mode)
+    @objc func captureButtonDidTap(_ sender: CaptureButton) {        
+        self.statusPanel.indicate()
+        self.selectCaptureButtonAnimation(for: sender)
+        self.output.userRequestImageProcessing(mode: modeSegmented.mode)
     }
     
     func selectCaptureButtonAnimation(for sender: CaptureButton) {
@@ -134,5 +138,15 @@ extension ScreeningViewController {
     
     func displayDiagnosis(state: DiagnosisRiskState) {
         self.statusPanel.display(for: state)
+    }
+}
+
+
+// MARK: - implement status indicator view delegate
+
+extension ScreeningViewController: StatusIndicatorViewDelegate {
+    
+    func statusIndicatorViewDidTap(sender: UIView) {
+        self.output.routeToClinicScreen()
     }
 }

@@ -15,6 +15,8 @@ class StatusIndicatorView: UIView {
     private var diagnosisView: DiagnosisIndicatorView!
     private var descriptionLabel: UILabel!
     
+    var delegate: StatusIndicatorViewDelegate?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -39,6 +41,7 @@ extension StatusIndicatorView {
         DispatchQueue.main.async {
             self.clearIndicator()
             self.prepareForShowDiagnosis(state)
+            self.addTapGestureRecognizer()
         }
     }
     
@@ -74,6 +77,23 @@ private extension StatusIndicatorView {
         self.statusIndicator.apply (
             .statusIndicatorLayoutStyle(view: self, label: descriptionLabel))
         self.statusIndicator.startAnimating()
+    }
+    
+    func addTapGestureRecognizer() {
+        let recognizer = UITapGestureRecognizer (
+            target: self, action: #selector(diagnosisViewDidTap(sender:)))
+        self.diagnosisView.addGestureRecognizer(recognizer)
+    }
+}
+
+
+// MARK: - implement tap gesture recognizer handler
+
+extension StatusIndicatorView {
+    
+    @objc func diagnosisViewDidTap(sender: UIView) {
+        print("tap")
+        self.delegate?.statusIndicatorViewDidTap(sender: sender)
     }
 }
 
