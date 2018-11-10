@@ -21,9 +21,19 @@ class ClinicListPresenter {
     private var filteredClinics = [ClinicModel]()
     private let locationManager = LocationManager()
     
+    private var filterText = ""
+    
     init(interactor: ClinicListInteractorInput) {
         self.interactor = interactor
         locationManager.delegate = self
+    }
+    
+    private func applyFilter() {
+        if filterText.isEmpty {
+            filteredClinics = clinics
+        } else {
+            filteredClinics = clinics.filter { $0.title.contains(filterText) }
+        }
     }
 }
 
@@ -59,11 +69,8 @@ extension ClinicListPresenter: ClinicListViewControllerOutput {
     }
     
     func clinicListViewControllerLoadWithFilter(_ view: ClinicListViewController, text: String) {
-        if text.isEmpty {
-            filteredClinics = clinics
-        } else {
-            filteredClinics = clinics.filter { $0.title.contains(text) }
-        }
+        filterText = text
+        applyFilter()
         view.renderClinics()
     }
     
@@ -80,6 +87,7 @@ extension ClinicListPresenter: ClinicListInteractorOutput {
     func didLoadClinicsSuccess(_ clinics: [ClinicModel]) {
         self.clinics = clinics
         self.filteredClinics = clinics
+        applyFilter()
         view?.renderClinics()
     }
     
