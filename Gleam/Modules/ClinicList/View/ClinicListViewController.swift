@@ -36,9 +36,9 @@ class ClinicListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ClinicListConfigurator.configure(self)
-        registerCells()
         output.clinicListViewControllerDidLoad(self)
         hideKeyboardWhenTappedAround()
+        setupTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,8 +61,16 @@ class ClinicListViewController: UIViewController {
 
 // MARK: - Private methods
 private extension ClinicListViewController {
-    func registerCells() {
+    func setupTableView() {
         tableView.register(ClinicTableViewCell.self, forCellReuseIdentifier: "ClinicTableViewCell")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.tableView.backgroundColor = .white
+            var rect = self.tableView.bounds
+            rect.origin.y = -rect.size.height
+            let bottomView = UIView(frame: rect)
+            bottomView.backgroundColor = UIColor.Gleam.neonBlue
+            self.tableView.addSubview(bottomView)
+        }
     }
 }
 
@@ -74,7 +82,6 @@ private extension ClinicListViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        tableView.bounces = false
         tableView.showsVerticalScrollIndicator = false
         view.addSubview(tableView)
         
