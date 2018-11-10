@@ -29,6 +29,16 @@ class ScreeningViewController: UIViewController, ScreeningViewInput {
 }
 
 
+// MARK: - implement light style for status bar
+
+extension ScreeningViewController {
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+}
+
+
 // MARK: - implement style applying
 
 extension ScreeningViewController {
