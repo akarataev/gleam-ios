@@ -17,7 +17,7 @@ enum HealthService {
 extension HealthService: TargetType {
     
     var baseURL: URL {
-        return URL(string: "http://18.222.158.154:8000/")!
+        return URL(string: "http://gleam.apptolab.ru:8000/")!
     }
     
     var path: String {
@@ -45,7 +45,13 @@ extension HealthService: TargetType {
     var task: Task {
         switch self {
         case .getClinics:
-            return .requestPlain
+            let lat = UserSettings.lat
+            let lon = UserSettings.lon
+            if lat.isZero || lon.isZero {
+                return .requestPlain
+            } else {
+                return .requestParameters(parameters: ["lat": lat, "lon": lon], encoding: URLEncoding.default)
+            }
         case .sendUserData(let data):
             return .requestParameters(parameters: data.makeJSON(), encoding: JSONEncoding.default)
         }

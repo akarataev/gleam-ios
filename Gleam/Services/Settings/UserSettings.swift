@@ -25,7 +25,7 @@ struct UserSettings {
         }
     }
     
-    static var lat: Double? {
+    static var lat: Double {
         get {
             return UserDefaults.standard.double(forKey: UserSettingKeys.lat)
         }
@@ -34,7 +34,7 @@ struct UserSettings {
         }
     }
     
-    static var lon: Double? {
+    static var lon: Double {
         get {
             return UserDefaults.standard.double(forKey: UserSettingKeys.lon)
         }

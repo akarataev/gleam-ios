@@ -25,7 +25,11 @@ struct ClinicViewModel {
     }
     
     var distance: String {
-        return "1 km" // HARDCODED
+        guard let distance = model.distance else {
+            return "-"
+        }
+        let roudedValue = Double(round(distance * 100) / 100)
+        return "\(roudedValue) km"
     }
     
     var address: String {

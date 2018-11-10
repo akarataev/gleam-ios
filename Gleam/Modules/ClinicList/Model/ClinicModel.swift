@@ -17,6 +17,7 @@ struct ClinicModel: Codable, Model {
     var isOpen: Bool
     var opensAt: Int?
     var position: [Double]
+    var distance: Double?
     
     enum CodingKeys: String, CodingKey {
         case clinicId = "id"
@@ -27,5 +28,6 @@ struct ClinicModel: Codable, Model {
         case isOpen
         case opensAt
         case position
+        case distance
     }
 }
