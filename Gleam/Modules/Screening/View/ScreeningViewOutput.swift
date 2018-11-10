@@ -12,6 +12,7 @@ import Foundation
 @objc protocol ScreeningViewOutput {
     func viewIsReady()
     func viewIsPrepareToSegue(segue: UIStoryboardSegue)
+    func userRequestImageProcessing(mode: CaptureMode)
 }
 
 

@@ -29,6 +29,16 @@ class ScreeningViewController: UIViewController, ScreeningViewInput {
 }
 
 
+// MARK: - implement light style for status bar
+
+extension ScreeningViewController {
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+}
+
+
 // MARK: - implement style applying
 
 extension ScreeningViewController {
@@ -90,6 +100,27 @@ extension ScreeningViewController {
 extension ScreeningViewController {
     
     @objc func captureButtonDidTap(_ sender: CaptureButton) {
+        self.statusPanel.indicate()
+        self.selectCaptureButtonAnimation(for: sender)
+        self.output.userRequestImageProcessing(mode: modeSegmented.mode)
+    }
+    
+    func selectCaptureButtonAnimation(for sender: CaptureButton) {
+        switch self.modeSegmented.mode {
+        case .live:
+            captureButton.repeatPulseAnimation(count: 9)
+        case .photo:
+            captureButton.repeatPulseAnimation(count: 1)
+        }
+    }
+}
 
+
+// MARK: - implement displaying results of classification
+
+extension ScreeningViewController {
+    
+    func displayDiagnosis(state: DiagnosisRiskState) {
+        self.statusPanel.display(for: state)
     }
 }

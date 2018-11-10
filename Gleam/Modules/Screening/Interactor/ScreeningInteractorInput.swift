@@ -10,4 +10,5 @@ import Foundation
 
 @objc protocol ScreeningInteractorInput {
 
+    func provideResultsOfClassification(mode: CaptureMode) 
 }
