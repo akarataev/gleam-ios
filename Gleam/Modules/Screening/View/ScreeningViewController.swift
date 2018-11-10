@@ -90,6 +90,18 @@ extension ScreeningViewController {
 extension ScreeningViewController {
     
     @objc func captureButtonDidTap(_ sender: CaptureButton) {
+        print("tap")
+        self.statusPanel.indicate()
+        self.output.userRequestImageProcessing(mode: modeSegmented.mode)
+    }
+}
 
+
+// MARK: - implement displaying results of classification
+
+extension ScreeningViewController {
+    
+    func displayDiagnosis(state: DiagnosisRiskState) {
+        self.statusPanel.display(for: state)
     }
 }

@@ -20,6 +20,20 @@ class ScreeningPresenter: NSObject, ScreeningModuleInput, ScreeningViewOutput, S
 }
 
 
+// MARK: - implement classification process initialization
+
+extension ScreeningPresenter {
+    
+    func userRequestImageProcessing(mode: CaptureMode) {
+        self.interactor.provideResultsOfClassification(mode: mode)
+    }
+    
+    func presentResultOfClassification(result: DiagnosisRiskState) {
+        view.displayDiagnosis(state: result)
+    }
+}
+
+
 // MARK: - Processing of user actions
 
 extension ScreeningPresenter {

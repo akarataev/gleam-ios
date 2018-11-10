@@ -10,4 +10,5 @@ import Foundation
 
 @objc protocol ScreeningInteractorOutput: class {
 
+    func presentResultOfClassification(result: DiagnosisRiskState)
 }
