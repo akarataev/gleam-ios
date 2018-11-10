@@ -34,4 +34,13 @@ enum UserFormState {
             return "Enter your email"
         }
     }
+    
+    func getButtonTitle() -> String {
+        switch self {
+        case .name, .number:
+            return "Next step"
+        case .email:
+            return "Make an appointment"
+        }
+    }
 }
