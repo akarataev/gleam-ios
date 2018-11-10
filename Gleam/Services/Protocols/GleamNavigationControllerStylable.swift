@@ -21,6 +21,7 @@ extension GleamNavigationControllerStylable where Self: UIViewController {
         navigationController?.navigationBar.barTintColor = UIColor.Gleam.neonBlue
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.layer.backgroundColor = UIColor.Gleam.neonBlue.cgColor
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     func setupNavigationBarForUserFlowViewController() {
