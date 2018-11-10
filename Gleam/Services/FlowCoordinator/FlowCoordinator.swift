@@ -13,7 +13,7 @@ class FlowCoordinator {
     static func getInitialViewController() -> UIViewController {
         let identifier: String
         if UserSettings.skipOnboarding {
-            identifier = "ClinicListViewController"
+            identifier = "ScreeningViewController"
         } else {
             identifier = "OnboardingViewController"
         }
