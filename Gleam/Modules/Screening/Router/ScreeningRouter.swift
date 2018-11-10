@@ -10,7 +10,20 @@ import UIKit
 import Foundation
 
 class ScreeningRouter: NSObject, ScreeningRouterInput {
+    
     func passData(segue: UIStoryboardSegue) {
-
+        switch segue.identifier {
+        case "ClinicScreenSegue":
+            break
+        default:
+            break
+        }
+    }
+    
+    func toClinicScreen(sender: UIViewController) {
+        sender.performSegue (
+            withIdentifier: "ClinicScreenSegue",
+            sender: sender
+        )
     }
 }

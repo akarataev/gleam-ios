@@ -41,6 +41,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="typhoonKey" value="configureScreeningViewController"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="cz9-lW-BIC" kind="show" identifier="ClinicScreenSegue" id="Bea-f0-TvF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -44,5 +44,11 @@ extension ScreeningPresenter {
 // MARK: - Prerouting section
 
 extension ScreeningPresenter {
+    
+    func routeToClinicScreen() {
+        self.router.toClinicScreen (
+            sender: view.getSender()
+        )
+    }
 
 }

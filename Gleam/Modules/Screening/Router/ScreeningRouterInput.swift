@@ -11,4 +11,5 @@ import Foundation
 
 @objc protocol ScreeningRouterInput {
     func passData(segue: UIStoryboardSegue)
+    func toClinicScreen(sender: UIViewController)
 }

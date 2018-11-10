@@ -100,9 +100,10 @@ extension ScreeningViewController {
 extension ScreeningViewController {
     
     @objc func captureButtonDidTap(_ sender: CaptureButton) {
-        self.statusPanel.indicate()
-        self.selectCaptureButtonAnimation(for: sender)
-        self.output.userRequestImageProcessing(mode: modeSegmented.mode)
+        self.output.routeToClinicScreen()
+//        self.statusPanel.indicate()
+//        self.selectCaptureButtonAnimation(for: sender)
+//        self.output.userRequestImageProcessing(mode: modeSegmented.mode)
     }
     
     func selectCaptureButtonAnimation(for sender: CaptureButton) {

@@ -12,6 +12,7 @@ import Foundation
 @objc protocol ScreeningViewInput: class {
     func setupInitialState()
     func displayDiagnosis(state: DiagnosisRiskState)
+    func getSender() -> UIViewController
 }
 
 

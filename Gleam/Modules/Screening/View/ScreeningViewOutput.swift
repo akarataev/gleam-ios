@@ -13,6 +13,7 @@ import Foundation
     func viewIsReady()
     func viewIsPrepareToSegue(segue: UIStoryboardSegue)
     func userRequestImageProcessing(mode: CaptureMode)
+    func routeToClinicScreen()
 }
 
 
