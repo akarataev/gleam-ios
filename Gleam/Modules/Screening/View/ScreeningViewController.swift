@@ -39,6 +39,17 @@ extension ScreeningViewController {
 }
 
 
+// MARK: - implement hide navigation bar
+
+extension ScreeningViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+}
+
+
 // MARK: - implement style applying
 
 extension ScreeningViewController {

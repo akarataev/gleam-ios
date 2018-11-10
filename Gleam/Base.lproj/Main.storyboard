@@ -21,7 +21,7 @@
                         <viewLayoutGuide key="safeArea" id="V5e-xe-pbR"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showMainScreen" id="9dx-88-LjF"/>
+                        <segue destination="cz9-lW-BIC" kind="show" identifier="showMainScreen" id="Pnl-vS-Ywv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4Q-Ew-7R8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -38,16 +38,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="SAT-iN-Ynq"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="typhoonKey" value="configureScreeningViewController"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="cz9-lW-BIC" kind="show" identifier="ClinicScreenSegue" id="Bea-f0-TvF"/>
+                        <segue destination="dCT-mk-rgY" kind="show" identifier="ClinicScreenSegue" id="Nma-W2-j4M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="393" y="131"/>
+            <point key="canvasLocation" x="836" y="131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aMk-jA-eow">
@@ -58,38 +59,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BQy-bs-ZHR" kind="relationship" relationship="rootViewController" id="GIq-9p-rDF"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WFk-I5-7OL"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2g-hl-3Yb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322" y="131"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Eoc-Tn-haE">
-            <objects>
-                <viewController id="BQy-bs-ZHR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9IK-e0-Ray">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZg-oi-l8P">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="dCT-mk-rgY" kind="show" id="yvm-T0-UZD"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="mXB-Kx-aax"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="dVW-1a-UG3"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gHQ-8C-ah6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2114" y="131"/>
+            <point key="canvasLocation" x="65" y="131"/>
         </scene>
         <!--Clinic List View Controller-->
         <scene sceneID="bOh-jm-oJe">
@@ -105,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CxD-HR-edj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2836" y="131"/>
+            <point key="canvasLocation" x="1604" y="131"/>
         </scene>
     </scenes>
 </document>
