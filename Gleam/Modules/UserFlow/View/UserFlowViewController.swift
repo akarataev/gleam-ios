@@ -10,6 +10,25 @@ import Foundation
 import UIKit
 import SnapKit
 
+// MARK: - UserFlowViewControllerInput
+protocol UserFlowViewControllerInput: class {
+    func render(viewState: UserFlowViewState)
+    func successSendData()
+    func failureSendData()
+}
+
+// MARK: UserFlowViewControllerOutput
+protocol UserFlowViewControllerOutput: class {
+    func userFlowViewControllerDidLoad(_ view: UserFlowViewController)
+    func userFlowViewControllerTextFieldChanged(_ view: UserFlowViewController, text: String?)
+    func userFlowViewControllerSendUserData(_ view: UserFlowViewController)
+    func userFlowViewControllerNavigate(_ view: UserFlowViewController)
+    
+    var currentUserData: UserFlowData { get }
+    var currentFormState: UserFormState { get }
+}
+
+// MARK: - UserFlowViewController
 class UserFlowViewController: UIViewController {
     
     private lazy var titleLabel = self.createTitleLabel()
@@ -18,30 +37,17 @@ class UserFlowViewController: UIViewController {
     private lazy var nextButton = self.createNextButton()
     private lazy var borderBottomBiew = self.createBottomBorderView()
     
-    var userData = UserData()
-    var currentState: UserFormState = .name
-    
-    private var textFieldValue = "" {
-        didSet {
-            changeButtonState()
-        }
-    }
+    var output: UserFlowViewControllerOutput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        textFieldValue = ""
-        setupKeyboard()
-        titleLabel.text = currentState.getTitle()
-        textField.placeholder = currentState.getPlaceholder()
-        _ = textField
-        _ = nextButton
-        _ = borderBottomBiew
+        setupView()
+        output.userFlowViewControllerDidLoad(self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupNavigationBar()
+        setupNavigationBarForUserFlowViewController()
         textField.becomeFirstResponder()
     }
     
@@ -51,8 +57,16 @@ class UserFlowViewController: UIViewController {
     }
     
     override func willMove(toParentViewController parent: UIViewController?) {
-        navigationController?.navigationBar.barTintColor = UIColor.HealthColors.neonBlue
+        guard let navigationController = navigationController else { return }
+        let countUserFlowVC = navigationController.viewControllers.filter { $0 is UserFlowViewController }.count
+        if countUserFlowVC == 1 {
+            navigationController.navigationBar.barTintColor = UIColor.Gleam.neonBlue
+        }
     }
+}
+
+// MARK: - User actions
+extension UserFlowViewController {
     
     @objc func changeFrame(_ sender: Notification) {
         guard let height = (sender.userInfo!["UIKeyboardBoundsUserInfoKey"] as? CGRect)?.height else { return }
@@ -65,37 +79,11 @@ class UserFlowViewController: UIViewController {
     }
     
     @objc func tapButton() {
-        let dataVC = UserDataViewController()
-        switch currentState {
-        case .name:
-            userData.name = textFieldValue
-            dataVC.currentState = .number
-        case .number:
-            userData.number = textFieldValue
-            dataVC.currentState = .email
-        case .email:
-            userData.email = textFieldValue
-            showSuccessAlert()
-            
-        }
-        dataVC.userData = userData
-        navigationController?.pushViewController(dataVC, animated: true)
+        output.userFlowViewControllerNavigate(self)
     }
     
     @objc func changeTextField(_ sender: UITextField) {
-        let placeholderHidden = sender.text?.isEmpty ?? true
-        showPlaceholder(placeholderHidden)
-        textFieldValue = sender.text ?? ""
-    }
-    
-    func showSuccessAlert() {
-        let alertVC = UIAlertController(title: "GOTOVO", message: "TI SKORO UMREW", preferredStyle: .alert)
-        alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in
-            if let stack = self.navigationController?.viewControllers.filter({ !($0 is UserDataViewController) }) {
-                self.navigationController?.setViewControllers(stack, animated: true)
-            }
-        }))
-        present(alertVC, animated: true)
+        output.userFlowViewControllerTextFieldChanged(self, text: sender.text)
     }
 }
 
@@ -120,7 +108,6 @@ private extension UserFlowViewController {
         textField.textColor = UIColor.black
         textField.font = UIFont.systemFont(ofSize: 15)
         textField.addTarget(self, action: #selector(changeTextField), for: .editingChanged)
-        textField.keyboardType = .namePhonePad
         textField.autocorrectionType = .no
         view.addSubview(textField)
         
@@ -136,7 +123,7 @@ private extension UserFlowViewController {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 12)
         label.text = "Your name"
-        label.textColor = UIColor.HealthColors.veryLightPinkTwo
+        label.textColor = UIColor.Gleam.veryLightPinkTwo
         view.addSubview(label)
         
         label.snp.makeConstraints { make in
@@ -151,27 +138,27 @@ private extension UserFlowViewController {
         let button = UIButton()
         button.setTitle("Next step", for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.setTitleColor(UIColor.HealthColors.veryLightPinkTwo, for: .disabled)
+        button.setTitleColor(UIColor.Gleam.veryLightPinkTwo, for: .disabled)
         button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
         view.addSubview(button)
         
         button.snp.makeConstraints { make in
             make.height.equalTo(57)
-            make.left.equalToSuperview().offset(0)
-            make.right.equalToSuperview().offset(0)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
         }
         return button
     }
     
     func createBottomBorderView() -> UIView {
         let borderView = UIView()
-        borderView.backgroundColor = UIColor.HealthColors.neonBlue
+        borderView.backgroundColor = UIColor.Gleam.neonBlue
         view.addSubview(borderView)
         
         borderView.snp.makeConstraints { make in
             make.height.equalTo(2)
-            make.left.equalToSuperview().offset(0)
-            make.right.equalToSuperview().offset(0)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
             make.top.equalTo(textField.snp.bottom).offset(8)
         }
         return borderView
@@ -179,26 +166,49 @@ private extension UserFlowViewController {
 }
 
 // MARK: - Private methods
-extension UserFlowViewController {
+private extension UserFlowViewController {
     
-    func changeButtonState() {
-        if textFieldValue.isEmpty {
-            nextButton.backgroundColor = .white
-            nextButton.isEnabled = false
-        } else {
-            nextButton.backgroundColor = UIColor.HealthColors.neonBlue
-            nextButton.isEnabled = true
-        }
+    func setupView() {
+        view.backgroundColor = .white
+        setupKeyboard()
+        _ = borderBottomBiew
     }
     
     func setupKeyboard() {
         NotificationCenter.default.addObserver(self, selector: #selector(changeFrame), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
-        
-    }
-    
-    func showPlaceholder(_ show: Bool) {
-        placeholdeLabel.isHidden = show
     }
 }
 
+// MARK: - UserFlowViewControllerInput
+extension UserFlowViewController: UserFlowViewControllerInput {
+    func render(viewState: UserFlowViewState) {
+        titleLabel.text = viewState.title
+        textField.placeholder = viewState.placeholder
+        textField.text = viewState.textFieldValue
+        placeholdeLabel.text = viewState.title
+        placeholdeLabel.isHidden = viewState.placeholderHidden
+        nextButton.isEnabled = viewState.buttonEnable
+        nextButton.backgroundColor = viewState.buttonColor
+        textField.keyboardType = viewState.keyboardType
+    }
+    
+    func successSendData() {
+        goBack(success: true)
+    }
+    
+    func failureSendData() {
+        goBack(success: false)
+    }
+    
+    func goBack(success: Bool) {
+        guard let stack = self.navigationController?.viewControllers.filter({ !($0 is UserFlowViewController) }),
+            let clinicListVC = stack.last as? ClinicListViewController else {
+            return
+        }
+        navigationController?.setViewControllers(stack, animated: true)
+        clinicListVC.showAlert(success: success)
+    }
+}
+
+// MARK: - GleamNavigationControllerStylable
 extension UserFlowViewController: GleamNavigationControllerStylable { }

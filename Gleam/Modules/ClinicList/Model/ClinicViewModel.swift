@@ -29,7 +29,7 @@ struct ClinicViewModel {
     }
     
     var address: String {
-        return "HARDCODED ADDRESS"
+        return model.address
     }
     
     var statusColor: UIColor {
@@ -41,10 +41,6 @@ struct ClinicViewModel {
     }
     
     var statusTitle: String {
-        if let opensAt = model.opensAt {
-            let date = Date(timeIntervalSince1970: TimeInterval(opensAt))
-            print(date)
-        }
         if model.isOpen {
             return "Open around the clock"
         } else {
