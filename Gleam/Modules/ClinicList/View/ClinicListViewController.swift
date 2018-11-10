@@ -36,14 +36,20 @@ class ClinicListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ClinicListConfigurator.configure(self)
-        registerCells()
         output.clinicListViewControllerDidLoad(self)
         hideKeyboardWhenTappedAround()
+        registerCells()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavigationBarForClinicListViewController()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupTableView()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -61,8 +67,18 @@ class ClinicListViewController: UIViewController {
 
 // MARK: - Private methods
 private extension ClinicListViewController {
+    
     func registerCells() {
         tableView.register(ClinicTableViewCell.self, forCellReuseIdentifier: "ClinicTableViewCell")
+    }
+    
+    func setupTableView() {
+        tableView.backgroundColor = .white
+        var rect = tableView.bounds
+        rect.origin.y = -rect.size.height
+        let bottomView = UIView(frame: rect)
+        bottomView.backgroundColor = UIColor.Gleam.neonBlue
+        tableView.addSubview(bottomView)
     }
 }
 
@@ -74,7 +90,6 @@ private extension ClinicListViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        tableView.bounces = false
         tableView.showsVerticalScrollIndicator = false
         view.addSubview(tableView)
         
