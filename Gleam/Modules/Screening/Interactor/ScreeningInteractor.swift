@@ -33,7 +33,7 @@ class ScreeningInteractor: NSObject, ScreeningInteractorInput {
 extension ScreeningInteractor: SkinCancerClassificatorDelegate {
     
     func classificatorFinishedWith(stats: Array<(String, Float)>) {
-        
+        stats.forEach { self.capturedData.append($0) }
     }
 }
 
@@ -43,6 +43,14 @@ extension ScreeningInteractor: SkinCancerClassificatorDelegate {
 extension ScreeningInteractor: AVCaptureVideoDataOutputSampleBufferDelegate {
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        
+        self.provideClassificationRequest { self.classificator.startClassification (sampleBuffer: sampleBuffer) }
+    }
+    
+    func provideClassificationRequest(classificationRequest: () -> Void) {
+        guard self.imagesNumber > 0 else { return }
+        classificationRequest(); self.imagesNumber -= 1
+        if self.imagesNumber == 0 {
+            
+        }
     }
 }
