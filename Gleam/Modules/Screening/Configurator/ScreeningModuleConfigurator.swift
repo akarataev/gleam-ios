@@ -51,7 +51,7 @@ class ScreeningModuleConfigurator: TyphoonAssembly {
         return TyphoonDefinition.withClass(ScreeningViewController.self) {
             definition in
             definition?.injectProperty(
-                Selector(("output")),
+                #selector(getter: AVCaptureConnection.output),
                 with: self.configureScreeningPresenter()
             )
             definition?.injectProperty (
@@ -87,8 +87,16 @@ class ScreeningModuleConfigurator: TyphoonAssembly {
         return TyphoonDefinition.withClass(ScreeningInteractor.self) {
             definition in
             definition?.injectProperty(
-                Selector(("output")),
+                #selector(getter: AVCaptureConnection.output),
                 with: self.configureScreeningPresenter()
+            )
+            definition?.injectProperty(
+                Selector(("classificator")),
+                with: SkinCancerClassificator()
+            )
+            definition?.injectProperty(
+                Selector(("captureSession")),
+                with: self.configurateVideoCaptureSession()
             )
         }
     }
