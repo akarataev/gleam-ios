@@ -38,6 +38,7 @@
 		BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */; };
 		C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */; };
 		D71EABBE21963AEC00EBE287 /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */; };
+		D7791B332196DCCD007A450C /* FTVGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D7791B322196DCCC007A450C /* FTVGG16.mlmodel */; };
 		D7BF48A321960B13006E7876 /* VideoCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */; };
 		D7BF48A721960B86006E7876 /* VideoCapturePreviewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */; };
 		D7BF48A921960C3A006E7876 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A821960C3A006E7876 /* Styles.swift */; };
@@ -93,6 +94,7 @@
 		A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.debug.xcconfig"; sourceTree = "<group>"; };
 		CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningModuleConfigurator.swift; sourceTree = "<group>"; };
 		D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
+		D7791B322196DCCC007A450C /* FTVGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FTVGG16.mlmodel; sourceTree = "<group>"; };
 		D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureSession.swift; sourceTree = "<group>"; };
 		D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapturePreviewLayer.swift; sourceTree = "<group>"; };
 		D7BF48A821960C3A006E7876 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 		507989592195E57300A6BE9D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D7791B312196DC76007A450C /* ML */,
 				504328AB2195F7B1000FA9B7 /* Protocols */,
 				504328C12196161A000FA9B7 /* Network */,
 				D7BF48A121960AF5006E7876 /* Video */,
@@ -301,6 +304,14 @@
 				46164AF6797F6BF4C003F3D2 /* ScreeningPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D7791B312196DC76007A450C /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				D7791B322196DCCC007A450C /* FTVGG16.mlmodel */,
+			);
+			path = ML;
 			sourceTree = "<group>";
 		};
 		D7BF48A121960AF5006E7876 /* Video */ = {
@@ -597,6 +608,7 @@
 				507989512195DC7400A6BE9D /* OnboardingModel.swift in Sources */,
 				D7BF48A721960B86006E7876 /* VideoCapturePreviewLayer.swift in Sources */,
 				C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */,
+				D7791B332196DCCD007A450C /* FTVGG16.mlmodel in Sources */,
 				F27C83DA9F8083E6728F2232 /* ScreeningViewController.swift in Sources */,
 				9EC77543A841A2785E7F2A75 /* ScreeningModuleInput.swift in Sources */,
 				E7EC3E52C1B4C3EFF20B2932 /* ScreeningPresenter.swift in Sources */,
