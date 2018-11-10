@@ -190,6 +190,7 @@ extension UserFlowViewController: UserFlowViewControllerInput {
         nextButton.isEnabled = viewState.buttonEnable
         nextButton.backgroundColor = viewState.buttonColor
         textField.keyboardType = viewState.keyboardType
+        nextButton.setTitle(viewState.buttonTitle, for: .normal)
     }
     
     func successSendData() {

@@ -74,7 +74,8 @@ class UserFlowPresenter {
                                           buttonEnable: buttonEnable,
                                           buttonColor: buttonColor,
                                           textFieldValue: currentText,
-                                          keyboardType: keyboardType)
+                                          keyboardType: keyboardType,
+                                          buttonTitle: currentState.getButtonTitle())
         self.view?.render(viewState: viewState)
     }
     

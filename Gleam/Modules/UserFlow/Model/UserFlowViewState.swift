@@ -17,4 +17,5 @@ struct UserFlowViewState {
     var buttonColor: UIColor
     var textFieldValue: String
     var keyboardType: UIKeyboardType
+    var buttonTitle: String
 }

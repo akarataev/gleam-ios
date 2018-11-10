@@ -57,8 +57,8 @@ class ClinicListViewController: UIViewController {
     }
     
     func showAlert(success: Bool) {
-        let title = success ? "Message" : "Error"
-        let message = success ? "Application successfully submitted" : "Something goes wrong, please try again later"
+        let title = success ? "Thank you" : "Error"
+        let message = success ? "Your appointment successfully submitted" : "Something goes wrong, please try again later"
         let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "OK", style: .cancel))
         present(alertVC, animated: true)
