@@ -1,941 +1,965 @@
 // !$*UTF8*$!
 {
-    archiveVersion = 1;
-    classes = {
-    };
-    objectVersion = 48;
-    objects = {
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
 
 /* Begin PBXBuildFile section */
-        442D1C975F9E78A17C91BF6C /* ScreeningViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85D64B0409E8631E3C3012 /* ScreeningViewInput.swift */; };
-        504328A82195E958000FA9B7 /* OnboardingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328A72195E958000FA9B7 /* OnboardingCollectionView.swift */; };
-        504328AA2195EF11000FA9B7 /* OnboardingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328A92195EF11000FA9B7 /* OnboardingPageControl.swift */; };
-        504328AD2195F7C3000FA9B7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328AC2195F7C3000FA9B7 /* Model.swift */; };
-        504328AF2195F7D2000FA9B7 /* CollectionSetupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */; };
-        504328B221960CD2000FA9B7 /* ClinicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328B121960CD2000FA9B7 /* ClinicListViewController.swift */; };
-        504328B821960E4E000FA9B7 /* ClinicListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328B721960E4E000FA9B7 /* ClinicListHeaderView.swift */; };
-        504328BA2196130C000FA9B7 /* GleamNavigationControllerStylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328B92196130C000FA9B7 /* GleamNavigationControllerStylable.swift */; };
-        504328BC21961583000FA9B7 /* ClinicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328BB21961583000FA9B7 /* ClinicTableViewCell.swift */; };
-        504328BE219615A8000FA9B7 /* ClinicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328BD219615A8000FA9B7 /* ClinicModel.swift */; };
-        504328C0219615C9000FA9B7 /* ClinicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328BF219615C9000FA9B7 /* ClinicViewModel.swift */; };
-        504328C321961631000FA9B7 /* GleamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328C221961631000FA9B7 /* GleamService.swift */; };
-        504328C521961663000FA9B7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328C421961663000FA9B7 /* NetworkManager.swift */; };
-        504328C921961A80000FA9B7 /* ClinicListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328C821961A80000FA9B7 /* ClinicListPresenter.swift */; };
-        504328CC21961B4E000FA9B7 /* ClinicListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328CB21961B4E000FA9B7 /* ClinicListConfigurator.swift */; };
-        504328CE21961BD6000FA9B7 /* ClinicListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328CD21961BD6000FA9B7 /* ClinicListInteractor.swift */; };
-        5079894C2195D5F100A6BE9D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079894B2195D5F100A6BE9D /* OnboardingViewController.swift */; };
-        5079894F2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079894E2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift */; };
-        507989512195DC7400A6BE9D /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989502195DC7400A6BE9D /* OnboardingModel.swift */; };
-        507989542195DCF900A6BE9D /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989532195DCF900A6BE9D /* OnboardingPresenter.swift */; };
-        507989572195E01500A6BE9D /* OnboardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989562195E01500A6BE9D /* OnboardingConfigurator.swift */; };
-        50C8827B2196D8AF00F245B8 /* UserFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8827A2196D8AF00F245B8 /* UserFlowViewController.swift */; };
-        50C8827F2196DDF400F245B8 /* UserFlowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8827E2196DDF400F245B8 /* UserFlowData.swift */; };
-        50C882812196E63F00F245B8 /* UserFlowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C882802196E63F00F245B8 /* UserFlowPresenter.swift */; };
-        50C882832196E68C00F245B8 /* UserFlowConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C882822196E68C00F245B8 /* UserFlowConfigurator.swift */; };
-        50C882872196E88B00F245B8 /* UserFlowInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C882862196E88B00F245B8 /* UserFlowInteractor.swift */; };
-        50D8E47F2196FB8900663FEC /* UserFormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E47E2196FB8900663FEC /* UserFormState.swift */; };
-        50D8E4812196FBCC00663FEC /* UserFlowViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E4802196FBCC00663FEC /* UserFlowViewState.swift */; };
-        6C064104B68DB404FDCFDBB8 /* Pods_Gleam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B176C197D1B936CD70130 /* Pods_Gleam.framework */; };
-        786EB5771481E18BCFBACA18 /* ScreeningRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161852760482C25BFBD8C1D3 /* ScreeningRouter.swift */; };
-        83A5981978D43BC70F56A403 /* ScreeningInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A71233AAD851C4155E9397 /* ScreeningInteractorOutput.swift */; };
-        86A2CC175BDFBA4D8BBF4AC7 /* ScreeningModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */; };
-        8A01DB8A0C8599AA8E103122 /* ScreeningInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1809B55881C52C53CC22AAB /* ScreeningInteractorInput.swift */; };
-        8B0798C7371363D33791C6FE /* ScreeningInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B46E5DBB9EDA2F79F8194E /* ScreeningInteractor.swift */; };
-        9EC77543A841A2785E7F2A75 /* ScreeningModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A04FA7B2A8367F470A21D9 /* ScreeningModuleInput.swift */; };
-        BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */; };
-        C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */; };
-        D71EABBE21963AEC00EBE287 /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */; };
-        D7791B332196DCCD007A450C /* FTVGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D7791B322196DCCC007A450C /* FTVGG16.mlmodel */; };
-        D7791B352196DD57007A450C /* ImagePreprocessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7791B342196DD57007A450C /* ImagePreprocessing.swift */; };
-        D7791B372196DE65007A450C /* SkinCancerClassificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7791B362196DE65007A450C /* SkinCancerClassificator.swift */; };
-        D7791B392196DE78007A450C /* SkinCancerClassificatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7791B382196DE78007A450C /* SkinCancerClassificatorDelegate.swift */; };
-        D7BF48A321960B13006E7876 /* VideoCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */; };
-        D7BF48A721960B86006E7876 /* VideoCapturePreviewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */; };
-        D7BF48A921960C3A006E7876 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A821960C3A006E7876 /* Styles.swift */; };
-        D7BF48AB21960CF0006E7876 /* ScreeningViewControllerStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48AA21960CF0006E7876 /* ScreeningViewControllerStyles.swift */; };
-        D7BF48AE21961108006E7876 /* StatusIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48AD21961108006E7876 /* StatusIndicatorView.swift */; };
-        D7BF48B02196117E006E7876 /* DiagnosisRiskState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48AF2196117E006E7876 /* DiagnosisRiskState.swift */; };
-        D7BF48B2219611CD006E7876 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B1219611CD006E7876 /* Colors.swift */; };
-        D7BF48B42196122F006E7876 /* DiagnosisIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B32196122F006E7876 /* DiagnosisIndicatorView.swift */; };
-        D7BF48B621961279006E7876 /* CircleIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B521961279006E7876 /* CircleIndicatorView.swift */; };
-        D7BF48B8219613D0006E7876 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B7219613D0006E7876 /* Fonts.swift */; };
-        D7BF48BB21961AC5006E7876 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48BA21961AC5006E7876 /* CaptureButton.swift */; };
-        D7BF48BE21961FB3006E7876 /* CaptureModeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48BD21961FB3006E7876 /* CaptureModeSegment.swift */; };
-        D7FBBA442195C5E900410C10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBBA432195C5E900410C10 /* AppDelegate.swift */; };
-        D7FBBA492195C5E900410C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA472195C5E900410C10 /* Main.storyboard */; };
-        D7FBBA4B2195C5E900410C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA4A2195C5E900410C10 /* Assets.xcassets */; };
-        D7FBBA4E2195C5E900410C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA4C2195C5E900410C10 /* LaunchScreen.storyboard */; };
-        E7EC3E52C1B4C3EFF20B2932 /* ScreeningPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46164AF6797F6BF4C003F3D2 /* ScreeningPresenter.swift */; };
-        F27C83DA9F8083E6728F2232 /* ScreeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B77C40F753204C9EBC8D /* ScreeningViewController.swift */; };
+		442D1C975F9E78A17C91BF6C /* ScreeningViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85D64B0409E8631E3C3012 /* ScreeningViewInput.swift */; };
+		504328A82195E958000FA9B7 /* OnboardingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328A72195E958000FA9B7 /* OnboardingCollectionView.swift */; };
+		504328AA2195EF11000FA9B7 /* OnboardingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328A92195EF11000FA9B7 /* OnboardingPageControl.swift */; };
+		504328AD2195F7C3000FA9B7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328AC2195F7C3000FA9B7 /* Model.swift */; };
+		504328AF2195F7D2000FA9B7 /* CollectionSetupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */; };
+		504328B221960CD2000FA9B7 /* ClinicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328B121960CD2000FA9B7 /* ClinicListViewController.swift */; };
+		504328B821960E4E000FA9B7 /* ClinicListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328B721960E4E000FA9B7 /* ClinicListHeaderView.swift */; };
+		504328BA2196130C000FA9B7 /* GleamNavigationControllerStylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328B92196130C000FA9B7 /* GleamNavigationControllerStylable.swift */; };
+		504328BC21961583000FA9B7 /* ClinicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328BB21961583000FA9B7 /* ClinicTableViewCell.swift */; };
+		504328BE219615A8000FA9B7 /* ClinicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328BD219615A8000FA9B7 /* ClinicModel.swift */; };
+		504328C0219615C9000FA9B7 /* ClinicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328BF219615C9000FA9B7 /* ClinicViewModel.swift */; };
+		504328C321961631000FA9B7 /* GleamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328C221961631000FA9B7 /* GleamService.swift */; };
+		504328C521961663000FA9B7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328C421961663000FA9B7 /* NetworkManager.swift */; };
+		504328C921961A80000FA9B7 /* ClinicListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328C821961A80000FA9B7 /* ClinicListPresenter.swift */; };
+		504328CC21961B4E000FA9B7 /* ClinicListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328CB21961B4E000FA9B7 /* ClinicListConfigurator.swift */; };
+		504328CE21961BD6000FA9B7 /* ClinicListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504328CD21961BD6000FA9B7 /* ClinicListInteractor.swift */; };
+		5079894C2195D5F100A6BE9D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079894B2195D5F100A6BE9D /* OnboardingViewController.swift */; };
+		5079894F2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079894E2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift */; };
+		507989512195DC7400A6BE9D /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989502195DC7400A6BE9D /* OnboardingModel.swift */; };
+		507989542195DCF900A6BE9D /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989532195DCF900A6BE9D /* OnboardingPresenter.swift */; };
+		507989572195E01500A6BE9D /* OnboardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507989562195E01500A6BE9D /* OnboardingConfigurator.swift */; };
+		50C8827B2196D8AF00F245B8 /* UserFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8827A2196D8AF00F245B8 /* UserFlowViewController.swift */; };
+		50C8827F2196DDF400F245B8 /* UserFlowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8827E2196DDF400F245B8 /* UserFlowData.swift */; };
+		50C882812196E63F00F245B8 /* UserFlowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C882802196E63F00F245B8 /* UserFlowPresenter.swift */; };
+		50C882832196E68C00F245B8 /* UserFlowConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C882822196E68C00F245B8 /* UserFlowConfigurator.swift */; };
+		50C882872196E88B00F245B8 /* UserFlowInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C882862196E88B00F245B8 /* UserFlowInteractor.swift */; };
+		50D8E47F2196FB8900663FEC /* UserFormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E47E2196FB8900663FEC /* UserFormState.swift */; };
+		50D8E4812196FBCC00663FEC /* UserFlowViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E4802196FBCC00663FEC /* UserFlowViewState.swift */; };
+		50D8E48421971EC000663FEC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E48321971EC000663FEC /* LocationManager.swift */; };
+		50D8E4862197223200663FEC /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8E4852197223200663FEC /* UserSettings.swift */; };
+		6C064104B68DB404FDCFDBB8 /* Pods_Gleam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B176C197D1B936CD70130 /* Pods_Gleam.framework */; };
+		786EB5771481E18BCFBACA18 /* ScreeningRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161852760482C25BFBD8C1D3 /* ScreeningRouter.swift */; };
+		83A5981978D43BC70F56A403 /* ScreeningInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A71233AAD851C4155E9397 /* ScreeningInteractorOutput.swift */; };
+		86A2CC175BDFBA4D8BBF4AC7 /* ScreeningModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */; };
+		8A01DB8A0C8599AA8E103122 /* ScreeningInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1809B55881C52C53CC22AAB /* ScreeningInteractorInput.swift */; };
+		8B0798C7371363D33791C6FE /* ScreeningInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B46E5DBB9EDA2F79F8194E /* ScreeningInteractor.swift */; };
+		9EC77543A841A2785E7F2A75 /* ScreeningModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A04FA7B2A8367F470A21D9 /* ScreeningModuleInput.swift */; };
+		BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */; };
+		C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */; };
+		D71EABBE21963AEC00EBE287 /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */; };
+		D7791B332196DCCD007A450C /* FTVGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D7791B322196DCCC007A450C /* FTVGG16.mlmodel */; };
+		D7791B352196DD57007A450C /* ImagePreprocessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7791B342196DD57007A450C /* ImagePreprocessing.swift */; };
+		D7791B372196DE65007A450C /* SkinCancerClassificator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7791B362196DE65007A450C /* SkinCancerClassificator.swift */; };
+		D7791B392196DE78007A450C /* SkinCancerClassificatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7791B382196DE78007A450C /* SkinCancerClassificatorDelegate.swift */; };
+		D7BF48A321960B13006E7876 /* VideoCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */; };
+		D7BF48A721960B86006E7876 /* VideoCapturePreviewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */; };
+		D7BF48A921960C3A006E7876 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48A821960C3A006E7876 /* Styles.swift */; };
+		D7BF48AB21960CF0006E7876 /* ScreeningViewControllerStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48AA21960CF0006E7876 /* ScreeningViewControllerStyles.swift */; };
+		D7BF48AE21961108006E7876 /* StatusIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48AD21961108006E7876 /* StatusIndicatorView.swift */; };
+		D7BF48B02196117E006E7876 /* DiagnosisRiskState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48AF2196117E006E7876 /* DiagnosisRiskState.swift */; };
+		D7BF48B2219611CD006E7876 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B1219611CD006E7876 /* Colors.swift */; };
+		D7BF48B42196122F006E7876 /* DiagnosisIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B32196122F006E7876 /* DiagnosisIndicatorView.swift */; };
+		D7BF48B621961279006E7876 /* CircleIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B521961279006E7876 /* CircleIndicatorView.swift */; };
+		D7BF48B8219613D0006E7876 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48B7219613D0006E7876 /* Fonts.swift */; };
+		D7BF48BB21961AC5006E7876 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48BA21961AC5006E7876 /* CaptureButton.swift */; };
+		D7BF48BE21961FB3006E7876 /* CaptureModeSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF48BD21961FB3006E7876 /* CaptureModeSegment.swift */; };
+		D7FBBA442195C5E900410C10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FBBA432195C5E900410C10 /* AppDelegate.swift */; };
+		D7FBBA492195C5E900410C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA472195C5E900410C10 /* Main.storyboard */; };
+		D7FBBA4B2195C5E900410C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA4A2195C5E900410C10 /* Assets.xcassets */; };
+		D7FBBA4E2195C5E900410C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FBBA4C2195C5E900410C10 /* LaunchScreen.storyboard */; };
+		E7EC3E52C1B4C3EFF20B2932 /* ScreeningPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46164AF6797F6BF4C003F3D2 /* ScreeningPresenter.swift */; };
+		F27C83DA9F8083E6728F2232 /* ScreeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43B77C40F753204C9EBC8D /* ScreeningViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-        10AE4856F788BAC8D2F095D5 /* Pods-Gleam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.release.xcconfig"; sourceTree = "<group>"; };
-        1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningViewOutput.swift; sourceTree = "<group>"; };
-        161852760482C25BFBD8C1D3 /* ScreeningRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningRouter.swift; sourceTree = "<group>"; };
-        1F43B77C40F753204C9EBC8D /* ScreeningViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningViewController.swift; sourceTree = "<group>"; };
-        21A71233AAD851C4155E9397 /* ScreeningInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningInteractorOutput.swift; sourceTree = "<group>"; };
-        2C85D64B0409E8631E3C3012 /* ScreeningViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningViewInput.swift; sourceTree = "<group>"; };
-        46164AF6797F6BF4C003F3D2 /* ScreeningPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningPresenter.swift; sourceTree = "<group>"; };
-        4F0B176C197D1B936CD70130 /* Pods_Gleam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gleam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-        504328A72195E958000FA9B7 /* OnboardingCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionView.swift; sourceTree = "<group>"; };
-        504328A92195EF11000FA9B7 /* OnboardingPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageControl.swift; sourceTree = "<group>"; };
-        504328AC2195F7C3000FA9B7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-        504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSetupable.swift; sourceTree = "<group>"; };
-        504328B121960CD2000FA9B7 /* ClinicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListViewController.swift; sourceTree = "<group>"; };
-        504328B721960E4E000FA9B7 /* ClinicListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListHeaderView.swift; sourceTree = "<group>"; };
-        504328B92196130C000FA9B7 /* GleamNavigationControllerStylable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GleamNavigationControllerStylable.swift; sourceTree = "<group>"; };
-        504328BB21961583000FA9B7 /* ClinicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicTableViewCell.swift; sourceTree = "<group>"; };
-        504328BD219615A8000FA9B7 /* ClinicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicModel.swift; sourceTree = "<group>"; };
-        504328BF219615C9000FA9B7 /* ClinicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicViewModel.swift; sourceTree = "<group>"; };
-        504328C221961631000FA9B7 /* GleamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GleamService.swift; sourceTree = "<group>"; };
-        504328C421961663000FA9B7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-        504328C821961A80000FA9B7 /* ClinicListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListPresenter.swift; sourceTree = "<group>"; };
-        504328CB21961B4E000FA9B7 /* ClinicListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListConfigurator.swift; sourceTree = "<group>"; };
-        504328CD21961BD6000FA9B7 /* ClinicListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListInteractor.swift; sourceTree = "<group>"; };
-        5079894B2195D5F100A6BE9D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-        5079894E2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
-        507989502195DC7400A6BE9D /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
-        507989532195DCF900A6BE9D /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
-        507989562195E01500A6BE9D /* OnboardingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConfigurator.swift; sourceTree = "<group>"; };
-        50C8827A2196D8AF00F245B8 /* UserFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowViewController.swift; sourceTree = "<group>"; };
-        50C8827E2196DDF400F245B8 /* UserFlowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowData.swift; sourceTree = "<group>"; };
-        50C882802196E63F00F245B8 /* UserFlowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowPresenter.swift; sourceTree = "<group>"; };
-        50C882822196E68C00F245B8 /* UserFlowConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowConfigurator.swift; sourceTree = "<group>"; };
-        50C882862196E88B00F245B8 /* UserFlowInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowInteractor.swift; sourceTree = "<group>"; };
-        50D8E47E2196FB8900663FEC /* UserFormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFormState.swift; sourceTree = "<group>"; };
-        50D8E4802196FBCC00663FEC /* UserFlowViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowViewState.swift; sourceTree = "<group>"; };
-        57A04FA7B2A8367F470A21D9 /* ScreeningModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningModuleInput.swift; sourceTree = "<group>"; };
-        82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningRouterInput.swift; sourceTree = "<group>"; };
-        87B46E5DBB9EDA2F79F8194E /* ScreeningInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningInteractor.swift; sourceTree = "<group>"; };
-        A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.debug.xcconfig"; sourceTree = "<group>"; };
-        CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningModuleConfigurator.swift; sourceTree = "<group>"; };
-        D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
-        D7791B322196DCCC007A450C /* FTVGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FTVGG16.mlmodel; sourceTree = "<group>"; };
-        D7791B342196DD57007A450C /* ImagePreprocessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreprocessing.swift; sourceTree = "<group>"; };
-        D7791B362196DE65007A450C /* SkinCancerClassificator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinCancerClassificator.swift; sourceTree = "<group>"; };
-        D7791B382196DE78007A450C /* SkinCancerClassificatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinCancerClassificatorDelegate.swift; sourceTree = "<group>"; };
-        D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureSession.swift; sourceTree = "<group>"; };
-        D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapturePreviewLayer.swift; sourceTree = "<group>"; };
-        D7BF48A821960C3A006E7876 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
-        D7BF48AA21960CF0006E7876 /* ScreeningViewControllerStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreeningViewControllerStyles.swift; sourceTree = "<group>"; };
-        D7BF48AD21961108006E7876 /* StatusIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusIndicatorView.swift; sourceTree = "<group>"; };
-        D7BF48AF2196117E006E7876 /* DiagnosisRiskState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisRiskState.swift; sourceTree = "<group>"; };
-        D7BF48B1219611CD006E7876 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-        D7BF48B32196122F006E7876 /* DiagnosisIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisIndicatorView.swift; sourceTree = "<group>"; };
-        D7BF48B521961279006E7876 /* CircleIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleIndicatorView.swift; sourceTree = "<group>"; };
-        D7BF48B7219613D0006E7876 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-        D7BF48BA21961AC5006E7876 /* CaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
-        D7BF48BD21961FB3006E7876 /* CaptureModeSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureModeSegment.swift; sourceTree = "<group>"; };
-        D7FBBA402195C5E900410C10 /* Gleam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gleam.app; sourceTree = BUILT_PRODUCTS_DIR; };
-        D7FBBA432195C5E900410C10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-        D7FBBA482195C5E900410C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-        D7FBBA4A2195C5E900410C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-        D7FBBA4D2195C5E900410C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-        D7FBBA4F2195C5E900410C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-        F1809B55881C52C53CC22AAB /* ScreeningInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningInteractorInput.swift; sourceTree = "<group>"; };
+		10AE4856F788BAC8D2F095D5 /* Pods-Gleam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.release.xcconfig"; sourceTree = "<group>"; };
+		1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningViewOutput.swift; sourceTree = "<group>"; };
+		161852760482C25BFBD8C1D3 /* ScreeningRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningRouter.swift; sourceTree = "<group>"; };
+		1F43B77C40F753204C9EBC8D /* ScreeningViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningViewController.swift; sourceTree = "<group>"; };
+		21A71233AAD851C4155E9397 /* ScreeningInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningInteractorOutput.swift; sourceTree = "<group>"; };
+		2C85D64B0409E8631E3C3012 /* ScreeningViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningViewInput.swift; sourceTree = "<group>"; };
+		46164AF6797F6BF4C003F3D2 /* ScreeningPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningPresenter.swift; sourceTree = "<group>"; };
+		4F0B176C197D1B936CD70130 /* Pods_Gleam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gleam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		504328A72195E958000FA9B7 /* OnboardingCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionView.swift; sourceTree = "<group>"; };
+		504328A92195EF11000FA9B7 /* OnboardingPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageControl.swift; sourceTree = "<group>"; };
+		504328AC2195F7C3000FA9B7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSetupable.swift; sourceTree = "<group>"; };
+		504328B121960CD2000FA9B7 /* ClinicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListViewController.swift; sourceTree = "<group>"; };
+		504328B721960E4E000FA9B7 /* ClinicListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListHeaderView.swift; sourceTree = "<group>"; };
+		504328B92196130C000FA9B7 /* GleamNavigationControllerStylable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GleamNavigationControllerStylable.swift; sourceTree = "<group>"; };
+		504328BB21961583000FA9B7 /* ClinicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicTableViewCell.swift; sourceTree = "<group>"; };
+		504328BD219615A8000FA9B7 /* ClinicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicModel.swift; sourceTree = "<group>"; };
+		504328BF219615C9000FA9B7 /* ClinicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicViewModel.swift; sourceTree = "<group>"; };
+		504328C221961631000FA9B7 /* GleamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GleamService.swift; sourceTree = "<group>"; };
+		504328C421961663000FA9B7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		504328C821961A80000FA9B7 /* ClinicListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListPresenter.swift; sourceTree = "<group>"; };
+		504328CB21961B4E000FA9B7 /* ClinicListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListConfigurator.swift; sourceTree = "<group>"; };
+		504328CD21961BD6000FA9B7 /* ClinicListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicListInteractor.swift; sourceTree = "<group>"; };
+		5079894B2195D5F100A6BE9D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		5079894E2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		507989502195DC7400A6BE9D /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		507989532195DCF900A6BE9D /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
+		507989562195E01500A6BE9D /* OnboardingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConfigurator.swift; sourceTree = "<group>"; };
+		50C8827A2196D8AF00F245B8 /* UserFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowViewController.swift; sourceTree = "<group>"; };
+		50C8827E2196DDF400F245B8 /* UserFlowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowData.swift; sourceTree = "<group>"; };
+		50C882802196E63F00F245B8 /* UserFlowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowPresenter.swift; sourceTree = "<group>"; };
+		50C882822196E68C00F245B8 /* UserFlowConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowConfigurator.swift; sourceTree = "<group>"; };
+		50C882862196E88B00F245B8 /* UserFlowInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowInteractor.swift; sourceTree = "<group>"; };
+		50D8E47E2196FB8900663FEC /* UserFormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFormState.swift; sourceTree = "<group>"; };
+		50D8E4802196FBCC00663FEC /* UserFlowViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowViewState.swift; sourceTree = "<group>"; };
+		50D8E48321971EC000663FEC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = Gleam/Services/Location/LocationManager.swift; sourceTree = SOURCE_ROOT; };
+		50D8E4852197223200663FEC /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		57A04FA7B2A8367F470A21D9 /* ScreeningModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningModuleInput.swift; sourceTree = "<group>"; };
+		82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningRouterInput.swift; sourceTree = "<group>"; };
+		87B46E5DBB9EDA2F79F8194E /* ScreeningInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningInteractor.swift; sourceTree = "<group>"; };
+		A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.debug.xcconfig"; sourceTree = "<group>"; };
+		CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningModuleConfigurator.swift; sourceTree = "<group>"; };
+		D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
+		D7791B322196DCCC007A450C /* FTVGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FTVGG16.mlmodel; sourceTree = "<group>"; };
+		D7791B342196DD57007A450C /* ImagePreprocessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreprocessing.swift; sourceTree = "<group>"; };
+		D7791B362196DE65007A450C /* SkinCancerClassificator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinCancerClassificator.swift; sourceTree = "<group>"; };
+		D7791B382196DE78007A450C /* SkinCancerClassificatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinCancerClassificatorDelegate.swift; sourceTree = "<group>"; };
+		D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureSession.swift; sourceTree = "<group>"; };
+		D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapturePreviewLayer.swift; sourceTree = "<group>"; };
+		D7BF48A821960C3A006E7876 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		D7BF48AA21960CF0006E7876 /* ScreeningViewControllerStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreeningViewControllerStyles.swift; sourceTree = "<group>"; };
+		D7BF48AD21961108006E7876 /* StatusIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusIndicatorView.swift; sourceTree = "<group>"; };
+		D7BF48AF2196117E006E7876 /* DiagnosisRiskState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisRiskState.swift; sourceTree = "<group>"; };
+		D7BF48B1219611CD006E7876 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D7BF48B32196122F006E7876 /* DiagnosisIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisIndicatorView.swift; sourceTree = "<group>"; };
+		D7BF48B521961279006E7876 /* CircleIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleIndicatorView.swift; sourceTree = "<group>"; };
+		D7BF48B7219613D0006E7876 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		D7BF48BA21961AC5006E7876 /* CaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
+		D7BF48BD21961FB3006E7876 /* CaptureModeSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureModeSegment.swift; sourceTree = "<group>"; };
+		D7FBBA402195C5E900410C10 /* Gleam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gleam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FBBA432195C5E900410C10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7FBBA482195C5E900410C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7FBBA4A2195C5E900410C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7FBBA4D2195C5E900410C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7FBBA4F2195C5E900410C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1809B55881C52C53CC22AAB /* ScreeningInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningInteractorInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-        D7FBBA3D2195C5E900410C10 /* Frameworks */ = {
-            isa = PBXFrameworksBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                6C064104B68DB404FDCFDBB8 /* Pods_Gleam.framework in Frameworks */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		D7FBBA3D2195C5E900410C10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C064104B68DB404FDCFDBB8 /* Pods_Gleam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-        01ED58BD057BF270CC8799F7 /* Modules */ = {
-            isa = PBXGroup;
-            children = (
-                50C882792196D89700F245B8 /* UserFlow */,
-                504328B021960CBD000FA9B7 /* ClinicList */,
-                5079894A2195D5D200A6BE9D /* Onboarding */,
-                D914BA25C63E87D944602843 /* Screening */,
-            );
-            path = Modules;
-            sourceTree = "<group>";
-        };
-        504328AB2195F7B1000FA9B7 /* Protocols */ = {
-            isa = PBXGroup;
-            children = (
-                504328B92196130C000FA9B7 /* GleamNavigationControllerStylable.swift */,
-                504328AC2195F7C3000FA9B7 /* Model.swift */,
-                504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */,
-            );
-            path = Protocols;
-            sourceTree = "<group>";
-        };
-        504328B021960CBD000FA9B7 /* ClinicList */ = {
-            isa = PBXGroup;
-            children = (
-                504328CA21961B3B000FA9B7 /* Configurator */,
-                504328B621960E41000FA9B7 /* Model */,
-                504328B521960E37000FA9B7 /* Interactor */,
-                504328B421960E30000FA9B7 /* Presenter */,
-                504328B321960E26000FA9B7 /* View */,
-            );
-            path = ClinicList;
-            sourceTree = "<group>";
-        };
-        504328B321960E26000FA9B7 /* View */ = {
-            isa = PBXGroup;
-            children = (
-                504328B121960CD2000FA9B7 /* ClinicListViewController.swift */,
-                504328B721960E4E000FA9B7 /* ClinicListHeaderView.swift */,
-                504328BB21961583000FA9B7 /* ClinicTableViewCell.swift */,
-            );
-            path = View;
-            sourceTree = "<group>";
-        };
-        504328B421960E30000FA9B7 /* Presenter */ = {
-            isa = PBXGroup;
-            children = (
-                504328C821961A80000FA9B7 /* ClinicListPresenter.swift */,
-            );
-            path = Presenter;
-            sourceTree = "<group>";
-        };
-        504328B521960E37000FA9B7 /* Interactor */ = {
-            isa = PBXGroup;
-            children = (
-                504328CD21961BD6000FA9B7 /* ClinicListInteractor.swift */,
-            );
-            path = Interactor;
-            sourceTree = "<group>";
-        };
-        504328B621960E41000FA9B7 /* Model */ = {
-            isa = PBXGroup;
-            children = (
-                504328BD219615A8000FA9B7 /* ClinicModel.swift */,
-                504328BF219615C9000FA9B7 /* ClinicViewModel.swift */,
-            );
-            path = Model;
-            sourceTree = "<group>";
-        };
-        504328C12196161A000FA9B7 /* Network */ = {
-            isa = PBXGroup;
-            children = (
-                504328C221961631000FA9B7 /* GleamService.swift */,
-                504328C421961663000FA9B7 /* NetworkManager.swift */,
-            );
-            path = Network;
-            sourceTree = "<group>";
-        };
-        504328CA21961B3B000FA9B7 /* Configurator */ = {
-            isa = PBXGroup;
-            children = (
-                504328CB21961B4E000FA9B7 /* ClinicListConfigurator.swift */,
-            );
-            path = Configurator;
-            sourceTree = "<group>";
-        };
-        5079894A2195D5D200A6BE9D /* Onboarding */ = {
-            isa = PBXGroup;
-            children = (
-                507989582195E2A200A6BE9D /* Configurator */,
-                507989552195E00600A6BE9D /* Presenter */,
-                5079894D2195D97F00A6BE9D /* View */,
-                507989522195DCA500A6BE9D /* Model */,
-            );
-            path = Onboarding;
-            sourceTree = "<group>";
-        };
-        5079894D2195D97F00A6BE9D /* View */ = {
-            isa = PBXGroup;
-            children = (
-                5079894B2195D5F100A6BE9D /* OnboardingViewController.swift */,
-                504328A72195E958000FA9B7 /* OnboardingCollectionView.swift */,
-                5079894E2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift */,
-                504328A92195EF11000FA9B7 /* OnboardingPageControl.swift */,
-            );
-            path = View;
-            sourceTree = "<group>";
-        };
-        507989522195DCA500A6BE9D /* Model */ = {
-            isa = PBXGroup;
-            children = (
-                507989502195DC7400A6BE9D /* OnboardingModel.swift */,
-            );
-            path = Model;
-            sourceTree = "<group>";
-        };
-        507989552195E00600A6BE9D /* Presenter */ = {
-            isa = PBXGroup;
-            children = (
-                507989532195DCF900A6BE9D /* OnboardingPresenter.swift */,
-            );
-            path = Presenter;
-            sourceTree = "<group>";
-        };
-        507989582195E2A200A6BE9D /* Configurator */ = {
-            isa = PBXGroup;
-            children = (
-                507989562195E01500A6BE9D /* OnboardingConfigurator.swift */,
-            );
-            path = Configurator;
-            sourceTree = "<group>";
-        };
-        507989592195E57300A6BE9D /* Services */ = {
-            isa = PBXGroup;
-            children = (
-                D7791B312196DC76007A450C /* ML */,
-                504328AB2195F7B1000FA9B7 /* Protocols */,
-                504328C12196161A000FA9B7 /* Network */,
-                D7BF48A121960AF5006E7876 /* Video */,
-                5079895A2195E57D00A6BE9D /* Styles */,
-            );
-            path = Services;
-            sourceTree = "<group>";
-        };
-        5079895A2195E57D00A6BE9D /* Styles */ = {
-            isa = PBXGroup;
-            children = (
-                D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */,
-                D7BF48A821960C3A006E7876 /* Styles.swift */,
-                D7BF48B1219611CD006E7876 /* Colors.swift */,
-                D7BF48B7219613D0006E7876 /* Fonts.swift */,
-            );
-            path = Styles;
-            sourceTree = "<group>";
-        };
-        50C882792196D89700F245B8 /* UserFlow */ = {
-            isa = PBXGroup;
-            children = (
-                50C8827D2196DDE400F245B8 /* Model */,
-                50C8827C2196DDD500F245B8 /* View */,
-                50C882842196E84300F245B8 /* Presenter */,
-                50C882852196E85200F245B8 /* Configurator */,
-                50D8E4822197070600663FEC /* Interactor */,
-            );
-            path = UserFlow;
-            sourceTree = "<group>";
-        };
-        50C8827C2196DDD500F245B8 /* View */ = {
-            isa = PBXGroup;
-            children = (
-                50C8827A2196D8AF00F245B8 /* UserFlowViewController.swift */,
-            );
-            path = View;
-            sourceTree = "<group>";
-        };
-        50C8827D2196DDE400F245B8 /* Model */ = {
-            isa = PBXGroup;
-            children = (
-                50C8827E2196DDF400F245B8 /* UserFlowData.swift */,
-                50D8E4802196FBCC00663FEC /* UserFlowViewState.swift */,
-                50D8E47E2196FB8900663FEC /* UserFormState.swift */,
-            );
-            path = Model;
-            sourceTree = "<group>";
-        };
-        50C882842196E84300F245B8 /* Presenter */ = {
-            isa = PBXGroup;
-            children = (
-                50C882802196E63F00F245B8 /* UserFlowPresenter.swift */,
-            );
-            path = Presenter;
-            sourceTree = "<group>";
-        };
-        50C882852196E85200F245B8 /* Configurator */ = {
-            isa = PBXGroup;
-            children = (
-                50C882822196E68C00F245B8 /* UserFlowConfigurator.swift */,
-            );
-            path = Configurator;
-            sourceTree = "<group>";
-        };
-        50D8E4822197070600663FEC /* Interactor */ = {
-            isa = PBXGroup;
-            children = (
-                50C882862196E88B00F245B8 /* UserFlowInteractor.swift */,
-            );
-            path = Interactor;
-            sourceTree = "<group>";
-        };
-        623F648A51522D0CDD4FD2A9 /* Configurator */ = {
-            isa = PBXGroup;
-            children = (
-                CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */,
-            );
-            path = Configurator;
-            sourceTree = "<group>";
-        };
-        8844B39372289113A20178B0 /* Frameworks */ = {
-            isa = PBXGroup;
-            children = (
-                4F0B176C197D1B936CD70130 /* Pods_Gleam.framework */,
-            );
-            name = Frameworks;
-            sourceTree = "<group>";
-        };
-        8A02D387FA747E8683FF0A35 /* Presenter */ = {
-            isa = PBXGroup;
-            children = (
-                57A04FA7B2A8367F470A21D9 /* ScreeningModuleInput.swift */,
-                46164AF6797F6BF4C003F3D2 /* ScreeningPresenter.swift */,
-            );
-            path = Presenter;
-            sourceTree = "<group>";
-        };
-        D7791B312196DC76007A450C /* ML */ = {
-            isa = PBXGroup;
-            children = (
-                D7791B322196DCCC007A450C /* FTVGG16.mlmodel */,
-                D7791B342196DD57007A450C /* ImagePreprocessing.swift */,
-                D7791B362196DE65007A450C /* SkinCancerClassificator.swift */,
-                D7791B382196DE78007A450C /* SkinCancerClassificatorDelegate.swift */,
-            );
-            path = ML;
-            sourceTree = "<group>";
-        };
-        D7BF48A121960AF5006E7876 /* Video */ = {
-            isa = PBXGroup;
-            children = (
-                D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */,
-            );
-            path = Video;
-            sourceTree = "<group>";
-        };
-        D7BF48A421960B5E006E7876 /* Components */ = {
-            isa = PBXGroup;
-            children = (
-                D7BF48BC21961F9F006E7876 /* CaptureModeSegment */,
-                D7BF48B921961AB8006E7876 /* CaptureButton */,
-                D7BF48AC219610E8006E7876 /* IndicatorView */,
-                D7BF48A521960B74006E7876 /* CameraView */,
-            );
-            path = Components;
-            sourceTree = "<group>";
-        };
-        D7BF48A521960B74006E7876 /* CameraView */ = {
-            isa = PBXGroup;
-            children = (
-                D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */,
-            );
-            path = CameraView;
-            sourceTree = "<group>";
-        };
-        D7BF48AC219610E8006E7876 /* IndicatorView */ = {
-            isa = PBXGroup;
-            children = (
-                D7BF48AD21961108006E7876 /* StatusIndicatorView.swift */,
-                D7BF48B32196122F006E7876 /* DiagnosisIndicatorView.swift */,
-                D7BF48B521961279006E7876 /* CircleIndicatorView.swift */,
-            );
-            path = IndicatorView;
-            sourceTree = "<group>";
-        };
-        D7BF48B921961AB8006E7876 /* CaptureButton */ = {
-            isa = PBXGroup;
-            children = (
-                D7BF48BA21961AC5006E7876 /* CaptureButton.swift */,
-            );
-            path = CaptureButton;
-            sourceTree = "<group>";
-        };
-        D7BF48BC21961F9F006E7876 /* CaptureModeSegment */ = {
-            isa = PBXGroup;
-            children = (
-                D7BF48BD21961FB3006E7876 /* CaptureModeSegment.swift */,
-            );
-            path = CaptureModeSegment;
-            sourceTree = "<group>";
-        };
-        D7FBBA372195C5E900410C10 = {
-            isa = PBXGroup;
-            children = (
-                D7FBBA422195C5E900410C10 /* Gleam */,
-                D7FBBA412195C5E900410C10 /* Products */,
-                FD35F0C4E5A79D848032FC9B /* Pods */,
-                8844B39372289113A20178B0 /* Frameworks */,
-            );
-            sourceTree = "<group>";
-        };
-        D7FBBA412195C5E900410C10 /* Products */ = {
-            isa = PBXGroup;
-            children = (
-                D7FBBA402195C5E900410C10 /* Gleam.app */,
-            );
-            name = Products;
-            sourceTree = "<group>";
-        };
-        D7FBBA422195C5E900410C10 /* Gleam */ = {
-            isa = PBXGroup;
-            children = (
-                D7FBBA432195C5E900410C10 /* AppDelegate.swift */,
-                D7FBBA472195C5E900410C10 /* Main.storyboard */,
-                D7FBBA4A2195C5E900410C10 /* Assets.xcassets */,
-                D7FBBA4C2195C5E900410C10 /* LaunchScreen.storyboard */,
-                D7FBBA4F2195C5E900410C10 /* Info.plist */,
-                01ED58BD057BF270CC8799F7 /* Modules */,
-                507989592195E57300A6BE9D /* Services */,
-                D7BF48A421960B5E006E7876 /* Components */,
-            );
-            path = Gleam;
-            sourceTree = "<group>";
-        };
-        D914BA25C63E87D944602843 /* Screening */ = {
-            isa = PBXGroup;
-            children = (
-                E619F84326F69D7010730F16 /* View */,
-                8A02D387FA747E8683FF0A35 /* Presenter */,
-                F4ABAB6964B9560902D8E033 /* Interactor */,
-                DF3B18AF8FCBF84860703963 /* Router */,
-                623F648A51522D0CDD4FD2A9 /* Configurator */,
-            );
-            path = Screening;
-            sourceTree = "<group>";
-        };
-        DF3B18AF8FCBF84860703963 /* Router */ = {
-            isa = PBXGroup;
-            children = (
-                82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */,
-                161852760482C25BFBD8C1D3 /* ScreeningRouter.swift */,
-            );
-            path = Router;
-            sourceTree = "<group>";
-        };
-        E619F84326F69D7010730F16 /* View */ = {
-            isa = PBXGroup;
-            children = (
-                2C85D64B0409E8631E3C3012 /* ScreeningViewInput.swift */,
-                1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */,
-                1F43B77C40F753204C9EBC8D /* ScreeningViewController.swift */,
-                D7BF48AA21960CF0006E7876 /* ScreeningViewControllerStyles.swift */,
-            );
-            path = View;
-            sourceTree = "<group>";
-        };
-        F4ABAB6964B9560902D8E033 /* Interactor */ = {
-            isa = PBXGroup;
-            children = (
-                F1809B55881C52C53CC22AAB /* ScreeningInteractorInput.swift */,
-                21A71233AAD851C4155E9397 /* ScreeningInteractorOutput.swift */,
-                87B46E5DBB9EDA2F79F8194E /* ScreeningInteractor.swift */,
-                D7BF48AF2196117E006E7876 /* DiagnosisRiskState.swift */,
-            );
-            path = Interactor;
-            sourceTree = "<group>";
-        };
-        FD35F0C4E5A79D848032FC9B /* Pods */ = {
-            isa = PBXGroup;
-            children = (
-                A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */,
-                10AE4856F788BAC8D2F095D5 /* Pods-Gleam.release.xcconfig */,
-            );
-            name = Pods;
-            sourceTree = "<group>";
-        };
+		01ED58BD057BF270CC8799F7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				50C882792196D89700F245B8 /* UserFlow */,
+				504328B021960CBD000FA9B7 /* ClinicList */,
+				5079894A2195D5D200A6BE9D /* Onboarding */,
+				D914BA25C63E87D944602843 /* Screening */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		504328AB2195F7B1000FA9B7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				504328B92196130C000FA9B7 /* GleamNavigationControllerStylable.swift */,
+				504328AC2195F7C3000FA9B7 /* Model.swift */,
+				504328AE2195F7D2000FA9B7 /* CollectionSetupable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		504328B021960CBD000FA9B7 /* ClinicList */ = {
+			isa = PBXGroup;
+			children = (
+				504328CA21961B3B000FA9B7 /* Configurator */,
+				504328B621960E41000FA9B7 /* Model */,
+				504328B521960E37000FA9B7 /* Interactor */,
+				504328B421960E30000FA9B7 /* Presenter */,
+				504328B321960E26000FA9B7 /* View */,
+			);
+			path = ClinicList;
+			sourceTree = "<group>";
+		};
+		504328B321960E26000FA9B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				504328B121960CD2000FA9B7 /* ClinicListViewController.swift */,
+				504328B721960E4E000FA9B7 /* ClinicListHeaderView.swift */,
+				504328BB21961583000FA9B7 /* ClinicTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		504328B421960E30000FA9B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				504328C821961A80000FA9B7 /* ClinicListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		504328B521960E37000FA9B7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				504328CD21961BD6000FA9B7 /* ClinicListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		504328B621960E41000FA9B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				504328BD219615A8000FA9B7 /* ClinicModel.swift */,
+				504328BF219615C9000FA9B7 /* ClinicViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		504328C12196161A000FA9B7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				504328C221961631000FA9B7 /* GleamService.swift */,
+				504328C421961663000FA9B7 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		504328CA21961B3B000FA9B7 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				504328CB21961B4E000FA9B7 /* ClinicListConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		5079894A2195D5D200A6BE9D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				507989582195E2A200A6BE9D /* Configurator */,
+				507989552195E00600A6BE9D /* Presenter */,
+				5079894D2195D97F00A6BE9D /* View */,
+				507989522195DCA500A6BE9D /* Model */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5079894D2195D97F00A6BE9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5079894B2195D5F100A6BE9D /* OnboardingViewController.swift */,
+				504328A72195E958000FA9B7 /* OnboardingCollectionView.swift */,
+				5079894E2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift */,
+				504328A92195EF11000FA9B7 /* OnboardingPageControl.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		507989522195DCA500A6BE9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				507989502195DC7400A6BE9D /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		507989552195E00600A6BE9D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				507989532195DCF900A6BE9D /* OnboardingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		507989582195E2A200A6BE9D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				507989562195E01500A6BE9D /* OnboardingConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		507989592195E57300A6BE9D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				50D8E488219723EA00663FEC /* Settings */,
+				50D8E487219723B500663FEC /* Location */,
+				D7791B312196DC76007A450C /* ML */,
+				504328AB2195F7B1000FA9B7 /* Protocols */,
+				504328C12196161A000FA9B7 /* Network */,
+				D7BF48A121960AF5006E7876 /* Video */,
+				5079895A2195E57D00A6BE9D /* Styles */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5079895A2195E57D00A6BE9D /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */,
+				D7BF48A821960C3A006E7876 /* Styles.swift */,
+				D7BF48B1219611CD006E7876 /* Colors.swift */,
+				D7BF48B7219613D0006E7876 /* Fonts.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		50C882792196D89700F245B8 /* UserFlow */ = {
+			isa = PBXGroup;
+			children = (
+				50C8827D2196DDE400F245B8 /* Model */,
+				50C8827C2196DDD500F245B8 /* View */,
+				50C882842196E84300F245B8 /* Presenter */,
+				50C882852196E85200F245B8 /* Configurator */,
+				50D8E4822197070600663FEC /* Interactor */,
+			);
+			path = UserFlow;
+			sourceTree = "<group>";
+		};
+		50C8827C2196DDD500F245B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50C8827A2196D8AF00F245B8 /* UserFlowViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		50C8827D2196DDE400F245B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50C8827E2196DDF400F245B8 /* UserFlowData.swift */,
+				50D8E4802196FBCC00663FEC /* UserFlowViewState.swift */,
+				50D8E47E2196FB8900663FEC /* UserFormState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50C882842196E84300F245B8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				50C882802196E63F00F245B8 /* UserFlowPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		50C882852196E85200F245B8 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				50C882822196E68C00F245B8 /* UserFlowConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		50D8E4822197070600663FEC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				50C882862196E88B00F245B8 /* UserFlowInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		50D8E487219723B500663FEC /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				50D8E48321971EC000663FEC /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		50D8E488219723EA00663FEC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				50D8E4852197223200663FEC /* UserSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		623F648A51522D0CDD4FD2A9 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8844B39372289113A20178B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F0B176C197D1B936CD70130 /* Pods_Gleam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A02D387FA747E8683FF0A35 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				57A04FA7B2A8367F470A21D9 /* ScreeningModuleInput.swift */,
+				46164AF6797F6BF4C003F3D2 /* ScreeningPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D7791B312196DC76007A450C /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				D7791B322196DCCC007A450C /* FTVGG16.mlmodel */,
+				D7791B342196DD57007A450C /* ImagePreprocessing.swift */,
+				D7791B362196DE65007A450C /* SkinCancerClassificator.swift */,
+				D7791B382196DE78007A450C /* SkinCancerClassificatorDelegate.swift */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		D7BF48A121960AF5006E7876 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF48A221960B13006E7876 /* VideoCaptureSession.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		D7BF48A421960B5E006E7876 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF48BC21961F9F006E7876 /* CaptureModeSegment */,
+				D7BF48B921961AB8006E7876 /* CaptureButton */,
+				D7BF48AC219610E8006E7876 /* IndicatorView */,
+				D7BF48A521960B74006E7876 /* CameraView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D7BF48A521960B74006E7876 /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF48A621960B86006E7876 /* VideoCapturePreviewLayer.swift */,
+			);
+			path = CameraView;
+			sourceTree = "<group>";
+		};
+		D7BF48AC219610E8006E7876 /* IndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF48AD21961108006E7876 /* StatusIndicatorView.swift */,
+				D7BF48B32196122F006E7876 /* DiagnosisIndicatorView.swift */,
+				D7BF48B521961279006E7876 /* CircleIndicatorView.swift */,
+			);
+			path = IndicatorView;
+			sourceTree = "<group>";
+		};
+		D7BF48B921961AB8006E7876 /* CaptureButton */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF48BA21961AC5006E7876 /* CaptureButton.swift */,
+			);
+			path = CaptureButton;
+			sourceTree = "<group>";
+		};
+		D7BF48BC21961F9F006E7876 /* CaptureModeSegment */ = {
+			isa = PBXGroup;
+			children = (
+				D7BF48BD21961FB3006E7876 /* CaptureModeSegment.swift */,
+			);
+			path = CaptureModeSegment;
+			sourceTree = "<group>";
+		};
+		D7FBBA372195C5E900410C10 = {
+			isa = PBXGroup;
+			children = (
+				D7FBBA422195C5E900410C10 /* Gleam */,
+				D7FBBA412195C5E900410C10 /* Products */,
+				FD35F0C4E5A79D848032FC9B /* Pods */,
+				8844B39372289113A20178B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D7FBBA412195C5E900410C10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7FBBA402195C5E900410C10 /* Gleam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7FBBA422195C5E900410C10 /* Gleam */ = {
+			isa = PBXGroup;
+			children = (
+				D7FBBA432195C5E900410C10 /* AppDelegate.swift */,
+				D7FBBA472195C5E900410C10 /* Main.storyboard */,
+				D7FBBA4A2195C5E900410C10 /* Assets.xcassets */,
+				D7FBBA4C2195C5E900410C10 /* LaunchScreen.storyboard */,
+				D7FBBA4F2195C5E900410C10 /* Info.plist */,
+				01ED58BD057BF270CC8799F7 /* Modules */,
+				507989592195E57300A6BE9D /* Services */,
+				D7BF48A421960B5E006E7876 /* Components */,
+			);
+			path = Gleam;
+			sourceTree = "<group>";
+		};
+		D914BA25C63E87D944602843 /* Screening */ = {
+			isa = PBXGroup;
+			children = (
+				E619F84326F69D7010730F16 /* View */,
+				8A02D387FA747E8683FF0A35 /* Presenter */,
+				F4ABAB6964B9560902D8E033 /* Interactor */,
+				DF3B18AF8FCBF84860703963 /* Router */,
+				623F648A51522D0CDD4FD2A9 /* Configurator */,
+			);
+			path = Screening;
+			sourceTree = "<group>";
+		};
+		DF3B18AF8FCBF84860703963 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */,
+				161852760482C25BFBD8C1D3 /* ScreeningRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E619F84326F69D7010730F16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C85D64B0409E8631E3C3012 /* ScreeningViewInput.swift */,
+				1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */,
+				1F43B77C40F753204C9EBC8D /* ScreeningViewController.swift */,
+				D7BF48AA21960CF0006E7876 /* ScreeningViewControllerStyles.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4ABAB6964B9560902D8E033 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F1809B55881C52C53CC22AAB /* ScreeningInteractorInput.swift */,
+				21A71233AAD851C4155E9397 /* ScreeningInteractorOutput.swift */,
+				87B46E5DBB9EDA2F79F8194E /* ScreeningInteractor.swift */,
+				D7BF48AF2196117E006E7876 /* DiagnosisRiskState.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FD35F0C4E5A79D848032FC9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */,
+				10AE4856F788BAC8D2F095D5 /* Pods-Gleam.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-        D7FBBA3F2195C5E900410C10 /* Gleam */ = {
-            isa = PBXNativeTarget;
-            buildConfigurationList = D7FBBA522195C5E900410C10 /* Build configuration list for PBXNativeTarget "Gleam" */;
-            buildPhases = (
-                43B10E3787EEBC7D379E12A2 /* [CP] Check Pods Manifest.lock */,
-                D7FBBA3C2195C5E900410C10 /* Sources */,
-                D7FBBA3D2195C5E900410C10 /* Frameworks */,
-                D7FBBA3E2195C5E900410C10 /* Resources */,
-                D7E8477A2195CAD5007CB5C6 /* Linter Phase */,
-                CCC41E65A38C80C97F98C884 /* [CP] Embed Pods Frameworks */,
-            );
-            buildRules = (
-            );
-            dependencies = (
-            );
-            name = Gleam;
-            productName = Gleam;
-            productReference = D7FBBA402195C5E900410C10 /* Gleam.app */;
-            productType = "com.apple.product-type.application";
-        };
+		D7FBBA3F2195C5E900410C10 /* Gleam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7FBBA522195C5E900410C10 /* Build configuration list for PBXNativeTarget "Gleam" */;
+			buildPhases = (
+				43B10E3787EEBC7D379E12A2 /* [CP] Check Pods Manifest.lock */,
+				D7FBBA3C2195C5E900410C10 /* Sources */,
+				D7FBBA3D2195C5E900410C10 /* Frameworks */,
+				D7FBBA3E2195C5E900410C10 /* Resources */,
+				D7E8477A2195CAD5007CB5C6 /* Linter Phase */,
+				CCC41E65A38C80C97F98C884 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gleam;
+			productName = Gleam;
+			productReference = D7FBBA402195C5E900410C10 /* Gleam.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-        D7FBBA382195C5E900410C10 /* Project object */ = {
-            isa = PBXProject;
-            attributes = {
-                LastSwiftUpdateCheck = 0940;
-                LastUpgradeCheck = 0940;
-                ORGANIZATIONNAME = "Alexey Karataev";
-                TargetAttributes = {
-                    D7FBBA3F2195C5E900410C10 = {
-                        CreatedOnToolsVersion = 9.4.1;
-                        ProvisioningStyle = Automatic;
-                    };
-                };
-            };
-            buildConfigurationList = D7FBBA3B2195C5E900410C10 /* Build configuration list for PBXProject "Gleam" */;
-            compatibilityVersion = "Xcode 8.0";
-            developmentRegion = en;
-            hasScannedForEncodings = 0;
-            knownRegions = (
-                en,
-                Base,
-            );
-            mainGroup = D7FBBA372195C5E900410C10;
-            productRefGroup = D7FBBA412195C5E900410C10 /* Products */;
-            projectDirPath = "";
-            projectRoot = "";
-            targets = (
-                D7FBBA3F2195C5E900410C10 /* Gleam */,
-            );
-        };
+		D7FBBA382195C5E900410C10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Alexey Karataev";
+				TargetAttributes = {
+					D7FBBA3F2195C5E900410C10 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D7FBBA3B2195C5E900410C10 /* Build configuration list for PBXProject "Gleam" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7FBBA372195C5E900410C10;
+			productRefGroup = D7FBBA412195C5E900410C10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7FBBA3F2195C5E900410C10 /* Gleam */,
+			);
+		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-        D7FBBA3E2195C5E900410C10 /* Resources */ = {
-            isa = PBXResourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                D7FBBA4E2195C5E900410C10 /* LaunchScreen.storyboard in Resources */,
-                D7FBBA4B2195C5E900410C10 /* Assets.xcassets in Resources */,
-                D7FBBA492195C5E900410C10 /* Main.storyboard in Resources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+		D7FBBA3E2195C5E900410C10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FBBA4E2195C5E900410C10 /* LaunchScreen.storyboard in Resources */,
+				D7FBBA4B2195C5E900410C10 /* Assets.xcassets in Resources */,
+				D7FBBA492195C5E900410C10 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-        43B10E3787EEBC7D379E12A2 /* [CP] Check Pods Manifest.lock */ = {
-            isa = PBXShellScriptBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            inputPaths = (
-                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-                "${PODS_ROOT}/Manifest.lock",
-            );
-            name = "[CP] Check Pods Manifest.lock";
-            outputPaths = (
-                "$(DERIVED_FILE_DIR)/Pods-Gleam-checkManifestLockResult.txt",
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-            shellPath = /bin/sh;
-            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-            showEnvVarsInLog = 0;
-        };
-        CCC41E65A38C80C97F98C884 /* [CP] Embed Pods Frameworks */ = {
-            isa = PBXShellScriptBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            inputPaths = (
-                "${SRCROOT}/Pods/Target Support Files/Pods-Gleam/Pods-Gleam-frameworks.sh",
-                "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-                "${BUILT_PRODUCTS_DIR}/DTCollectionViewManager/DTCollectionViewManager.framework",
-                "${BUILT_PRODUCTS_DIR}/DTModelStorage/DTModelStorage.framework",
-                "${BUILT_PRODUCTS_DIR}/HCSStarRatingView/HCSStarRatingView.framework",
-                "${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-                "${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
-                "${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-                "${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-                "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-                "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-                "${BUILT_PRODUCTS_DIR}/Typhoon/Typhoon.framework",
-            );
-            name = "[CP] Embed Pods Frameworks";
-            outputPaths = (
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTCollectionViewManager.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTModelStorage.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCSStarRatingView.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Typhoon.framework",
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-            shellPath = /bin/sh;
-            shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gleam/Pods-Gleam-frameworks.sh\"\n";
-            showEnvVarsInLog = 0;
-        };
-        D7E8477A2195CAD5007CB5C6 /* Linter Phase */ = {
-            isa = PBXShellScriptBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-            );
-            inputPaths = (
-            );
-            name = "Linter Phase";
-            outputPaths = (
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-            shellPath = /bin/sh;
-            shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-        };
+		43B10E3787EEBC7D379E12A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gleam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCC41E65A38C80C97F98C884 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gleam/Pods-Gleam-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DTCollectionViewManager/DTCollectionViewManager.framework",
+				"${BUILT_PRODUCTS_DIR}/DTModelStorage/DTModelStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/HCSStarRatingView/HCSStarRatingView.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Typhoon/Typhoon.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTCollectionViewManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTModelStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HCSStarRatingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Typhoon.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gleam/Pods-Gleam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7E8477A2195CAD5007CB5C6 /* Linter Phase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Linter Phase";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-        D7FBBA3C2195C5E900410C10 /* Sources */ = {
-            isa = PBXSourcesBuildPhase;
-            buildActionMask = 2147483647;
-            files = (
-                D7BF48B2219611CD006E7876 /* Colors.swift in Sources */,
-                50C882812196E63F00F245B8 /* UserFlowPresenter.swift in Sources */,
-                D7FBBA442195C5E900410C10 /* AppDelegate.swift in Sources */,
-                D7791B352196DD57007A450C /* ImagePreprocessing.swift in Sources */,
-                5079894F2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift in Sources */,
-                442D1C975F9E78A17C91BF6C /* ScreeningViewInput.swift in Sources */,
-                D7BF48AE21961108006E7876 /* StatusIndicatorView.swift in Sources */,
-                507989512195DC7400A6BE9D /* OnboardingModel.swift in Sources */,
-                D7BF48A721960B86006E7876 /* VideoCapturePreviewLayer.swift in Sources */,
-                C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */,
-                D7791B332196DCCD007A450C /* FTVGG16.mlmodel in Sources */,
-                F27C83DA9F8083E6728F2232 /* ScreeningViewController.swift in Sources */,
-                9EC77543A841A2785E7F2A75 /* ScreeningModuleInput.swift in Sources */,
-                50C882872196E88B00F245B8 /* UserFlowInteractor.swift in Sources */,
-                E7EC3E52C1B4C3EFF20B2932 /* ScreeningPresenter.swift in Sources */,
-                8A01DB8A0C8599AA8E103122 /* ScreeningInteractorInput.swift in Sources */,
-                504328BA2196130C000FA9B7 /* GleamNavigationControllerStylable.swift in Sources */,
-                507989572195E01500A6BE9D /* OnboardingConfigurator.swift in Sources */,
-                D7791B372196DE65007A450C /* SkinCancerClassificator.swift in Sources */,
-                D7BF48A321960B13006E7876 /* VideoCaptureSession.swift in Sources */,
-                50D8E4812196FBCC00663FEC /* UserFlowViewState.swift in Sources */,
-                507989542195DCF900A6BE9D /* OnboardingPresenter.swift in Sources */,
-                504328C0219615C9000FA9B7 /* ClinicViewModel.swift in Sources */,
+		D7FBBA3C2195C5E900410C10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BF48B2219611CD006E7876 /* Colors.swift in Sources */,
+				50C882812196E63F00F245B8 /* UserFlowPresenter.swift in Sources */,
+				D7FBBA442195C5E900410C10 /* AppDelegate.swift in Sources */,
+				D7791B352196DD57007A450C /* ImagePreprocessing.swift in Sources */,
+				5079894F2195D9D300A6BE9D /* OnboardingCollectionViewCell.swift in Sources */,
+				442D1C975F9E78A17C91BF6C /* ScreeningViewInput.swift in Sources */,
+				D7BF48AE21961108006E7876 /* StatusIndicatorView.swift in Sources */,
+				507989512195DC7400A6BE9D /* OnboardingModel.swift in Sources */,
+				D7BF48A721960B86006E7876 /* VideoCapturePreviewLayer.swift in Sources */,
+				C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */,
+				D7791B332196DCCD007A450C /* FTVGG16.mlmodel in Sources */,
+				F27C83DA9F8083E6728F2232 /* ScreeningViewController.swift in Sources */,
+				9EC77543A841A2785E7F2A75 /* ScreeningModuleInput.swift in Sources */,
+				50C882872196E88B00F245B8 /* UserFlowInteractor.swift in Sources */,
+				E7EC3E52C1B4C3EFF20B2932 /* ScreeningPresenter.swift in Sources */,
+				8A01DB8A0C8599AA8E103122 /* ScreeningInteractorInput.swift in Sources */,
+				504328BA2196130C000FA9B7 /* GleamNavigationControllerStylable.swift in Sources */,
+				507989572195E01500A6BE9D /* OnboardingConfigurator.swift in Sources */,
+				D7791B372196DE65007A450C /* SkinCancerClassificator.swift in Sources */,
+				D7BF48A321960B13006E7876 /* VideoCaptureSession.swift in Sources */,
+				50D8E4812196FBCC00663FEC /* UserFlowViewState.swift in Sources */,
+				507989542195DCF900A6BE9D /* OnboardingPresenter.swift in Sources */,
+				504328C0219615C9000FA9B7 /* ClinicViewModel.swift in Sources */,
 				D7791B392196DE78007A450C /* SkinCancerClassificatorDelegate.swift in Sources */,
 				50C8827B2196D8AF00F245B8 /* UserFlowViewController.swift in Sources */,
-                504328B821960E4E000FA9B7 /* ClinicListHeaderView.swift in Sources */,
-                50C8827F2196DDF400F245B8 /* UserFlowData.swift in Sources */,
-                504328AA2195EF11000FA9B7 /* OnboardingPageControl.swift in Sources */,
-                504328BE219615A8000FA9B7 /* ClinicModel.swift in Sources */,
-                504328C521961663000FA9B7 /* NetworkManager.swift in Sources */,
-                504328CC21961B4E000FA9B7 /* ClinicListConfigurator.swift in Sources */,
-                504328B221960CD2000FA9B7 /* ClinicListViewController.swift in Sources */,
-                D71EABBE21963AEC00EBE287 /* StyleExtensions.swift in Sources */,
-                504328C921961A80000FA9B7 /* ClinicListPresenter.swift in Sources */,
-                D7BF48A921960C3A006E7876 /* Styles.swift in Sources */,
-                D7BF48BE21961FB3006E7876 /* CaptureModeSegment.swift in Sources */,
-                D7BF48B8219613D0006E7876 /* Fonts.swift in Sources */,
-                83A5981978D43BC70F56A403 /* ScreeningInteractorOutput.swift in Sources */,
-                D7BF48AB21960CF0006E7876 /* ScreeningViewControllerStyles.swift in Sources */,
-                8B0798C7371363D33791C6FE /* ScreeningInteractor.swift in Sources */,
-                504328AF2195F7D2000FA9B7 /* CollectionSetupable.swift in Sources */,
-                BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */,
-                5079894C2195D5F100A6BE9D /* OnboardingViewController.swift in Sources */,
-                504328C321961631000FA9B7 /* GleamService.swift in Sources */,
-                504328BC21961583000FA9B7 /* ClinicTableViewCell.swift in Sources */,
-                50C882832196E68C00F245B8 /* UserFlowConfigurator.swift in Sources */,
-                504328CE21961BD6000FA9B7 /* ClinicListInteractor.swift in Sources */,
-                50D8E47F2196FB8900663FEC /* UserFormState.swift in Sources */,
-                786EB5771481E18BCFBACA18 /* ScreeningRouter.swift in Sources */,
-                504328AD2195F7C3000FA9B7 /* Model.swift in Sources */,
-                D7BF48B42196122F006E7876 /* DiagnosisIndicatorView.swift in Sources */,
-                D7BF48BB21961AC5006E7876 /* CaptureButton.swift in Sources */,
-                86A2CC175BDFBA4D8BBF4AC7 /* ScreeningModuleConfigurator.swift in Sources */,
-                504328A82195E958000FA9B7 /* OnboardingCollectionView.swift in Sources */,
-                D7BF48B621961279006E7876 /* CircleIndicatorView.swift in Sources */,
-                D7BF48B02196117E006E7876 /* DiagnosisRiskState.swift in Sources */,
-            );
-            runOnlyForDeploymentPostprocessing = 0;
-        };
+				504328B821960E4E000FA9B7 /* ClinicListHeaderView.swift in Sources */,
+				50C8827F2196DDF400F245B8 /* UserFlowData.swift in Sources */,
+				504328AA2195EF11000FA9B7 /* OnboardingPageControl.swift in Sources */,
+				504328BE219615A8000FA9B7 /* ClinicModel.swift in Sources */,
+				504328C521961663000FA9B7 /* NetworkManager.swift in Sources */,
+				504328CC21961B4E000FA9B7 /* ClinicListConfigurator.swift in Sources */,
+				504328B221960CD2000FA9B7 /* ClinicListViewController.swift in Sources */,
+				D71EABBE21963AEC00EBE287 /* StyleExtensions.swift in Sources */,
+				504328C921961A80000FA9B7 /* ClinicListPresenter.swift in Sources */,
+				D7BF48A921960C3A006E7876 /* Styles.swift in Sources */,
+				D7BF48BE21961FB3006E7876 /* CaptureModeSegment.swift in Sources */,
+				D7BF48B8219613D0006E7876 /* Fonts.swift in Sources */,
+				83A5981978D43BC70F56A403 /* ScreeningInteractorOutput.swift in Sources */,
+				D7BF48AB21960CF0006E7876 /* ScreeningViewControllerStyles.swift in Sources */,
+				50D8E4862197223200663FEC /* UserSettings.swift in Sources */,
+				8B0798C7371363D33791C6FE /* ScreeningInteractor.swift in Sources */,
+				504328AF2195F7D2000FA9B7 /* CollectionSetupable.swift in Sources */,
+				BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */,
+				5079894C2195D5F100A6BE9D /* OnboardingViewController.swift in Sources */,
+				504328C321961631000FA9B7 /* GleamService.swift in Sources */,
+				504328BC21961583000FA9B7 /* ClinicTableViewCell.swift in Sources */,
+				50C882832196E68C00F245B8 /* UserFlowConfigurator.swift in Sources */,
+				504328CE21961BD6000FA9B7 /* ClinicListInteractor.swift in Sources */,
+				50D8E47F2196FB8900663FEC /* UserFormState.swift in Sources */,
+				786EB5771481E18BCFBACA18 /* ScreeningRouter.swift in Sources */,
+				504328AD2195F7C3000FA9B7 /* Model.swift in Sources */,
+				D7BF48B42196122F006E7876 /* DiagnosisIndicatorView.swift in Sources */,
+				D7BF48BB21961AC5006E7876 /* CaptureButton.swift in Sources */,
+				50D8E48421971EC000663FEC /* LocationManager.swift in Sources */,
+				86A2CC175BDFBA4D8BBF4AC7 /* ScreeningModuleConfigurator.swift in Sources */,
+				504328A82195E958000FA9B7 /* OnboardingCollectionView.swift in Sources */,
+				D7BF48B621961279006E7876 /* CircleIndicatorView.swift in Sources */,
+				D7BF48B02196117E006E7876 /* DiagnosisRiskState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-        D7FBBA472195C5E900410C10 /* Main.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                D7FBBA482195C5E900410C10 /* Base */,
-            );
-            name = Main.storyboard;
-            sourceTree = "<group>";
-        };
-        D7FBBA4C2195C5E900410C10 /* LaunchScreen.storyboard */ = {
-            isa = PBXVariantGroup;
-            children = (
-                D7FBBA4D2195C5E900410C10 /* Base */,
-            );
-            name = LaunchScreen.storyboard;
-            sourceTree = "<group>";
-        };
+		D7FBBA472195C5E900410C10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7FBBA482195C5E900410C10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7FBBA4C2195C5E900410C10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7FBBA4D2195C5E900410C10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-        D7FBBA502195C5E900410C10 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_ENABLE_OBJC_WEAK = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = dwarf;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                ENABLE_TESTABILITY = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_DYNAMIC_NO_PIC = NO;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_OPTIMIZATION_LEVEL = 0;
-                GCC_PREPROCESSOR_DEFINITIONS = (
-                    "DEBUG=1",
-                    "$(inherited)",
-                );
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-                MTL_ENABLE_DEBUG_INFO = YES;
-                ONLY_ACTIVE_ARCH = YES;
-                SDKROOT = iphoneos;
-                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            };
-            name = Debug;
-        };
-        D7FBBA512195C5E900410C10 /* Release */ = {
-            isa = XCBuildConfiguration;
-            buildSettings = {
-                ALWAYS_SEARCH_USER_PATHS = NO;
-                CLANG_ANALYZER_NONNULL = YES;
-                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-                CLANG_CXX_LIBRARY = "libc++";
-                CLANG_ENABLE_MODULES = YES;
-                CLANG_ENABLE_OBJC_ARC = YES;
-                CLANG_ENABLE_OBJC_WEAK = YES;
-                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-                CLANG_WARN_BOOL_CONVERSION = YES;
-                CLANG_WARN_COMMA = YES;
-                CLANG_WARN_CONSTANT_CONVERSION = YES;
-                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-                CLANG_WARN_EMPTY_BODY = YES;
-                CLANG_WARN_ENUM_CONVERSION = YES;
-                CLANG_WARN_INFINITE_RECURSION = YES;
-                CLANG_WARN_INT_CONVERSION = YES;
-                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-                CLANG_WARN_STRICT_PROTOTYPES = YES;
-                CLANG_WARN_SUSPICIOUS_MOVE = YES;
-                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-                CLANG_WARN_UNREACHABLE_CODE = YES;
-                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                COPY_PHASE_STRIP = NO;
-                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-                ENABLE_NS_ASSERTIONS = NO;
-                ENABLE_STRICT_OBJC_MSGSEND = YES;
-                GCC_C_LANGUAGE_STANDARD = gnu11;
-                GCC_NO_COMMON_BLOCKS = YES;
-                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-                GCC_WARN_UNDECLARED_SELECTOR = YES;
-                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-                GCC_WARN_UNUSED_FUNCTION = YES;
-                GCC_WARN_UNUSED_VARIABLE = YES;
-                IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-                MTL_ENABLE_DEBUG_INFO = NO;
-                SDKROOT = iphoneos;
-                SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-                VALIDATE_PRODUCT = YES;
-            };
-            name = Release;
-        };
-        D7FBBA532195C5E900410C10 /* Debug */ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                CODE_SIGN_STYLE = Automatic;
-                CURRENT_PROJECT_VERSION = 7;
-                DEVELOPMENT_TEAM = U67ZU8H7H4;
-                INFOPLIST_FILE = Gleam/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = ru.apptolab.Gleam;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                PROVISIONING_PROFILE = "";
-                PROVISIONING_PROFILE_SPECIFIER = "";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = 1;
-                VERSIONING_SYSTEM = "apple-generic";
-            };
-            name = Debug;
-        };
-        D7FBBA542195C5E900410C10 /* Release */ = {
-            isa = XCBuildConfiguration;
-            baseConfigurationReference = 10AE4856F788BAC8D2F095D5 /* Pods-Gleam.release.xcconfig */;
-            buildSettings = {
-                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-                CODE_SIGN_IDENTITY = "iPhone Developer";
-                CODE_SIGN_STYLE = Automatic;
-                CURRENT_PROJECT_VERSION = 7;
-                DEVELOPMENT_TEAM = U67ZU8H7H4;
-                INFOPLIST_FILE = Gleam/Info.plist;
-                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-                PRODUCT_BUNDLE_IDENTIFIER = ru.apptolab.Gleam;
-                PRODUCT_NAME = "$(TARGET_NAME)";
-                PROVISIONING_PROFILE = "";
-                PROVISIONING_PROFILE_SPECIFIER = "";
-                SWIFT_VERSION = 4.0;
-                TARGETED_DEVICE_FAMILY = 1;
-                VERSIONING_SYSTEM = "apple-generic";
-            };
-            name = Release;
-        };
+		D7FBBA502195C5E900410C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7FBBA512195C5E900410C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7FBBA532195C5E900410C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = U67ZU8H7H4;
+				INFOPLIST_FILE = Gleam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.apptolab.Gleam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		D7FBBA542195C5E900410C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10AE4856F788BAC8D2F095D5 /* Pods-Gleam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = U67ZU8H7H4;
+				INFOPLIST_FILE = Gleam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.apptolab.Gleam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-        D7FBBA3B2195C5E900410C10 /* Build configuration list for PBXProject "Gleam" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                D7FBBA502195C5E900410C10 /* Debug */,
-                D7FBBA512195C5E900410C10 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
-        D7FBBA522195C5E900410C10 /* Build configuration list for PBXNativeTarget "Gleam" */ = {
-            isa = XCConfigurationList;
-            buildConfigurations = (
-                D7FBBA532195C5E900410C10 /* Debug */,
-                D7FBBA542195C5E900410C10 /* Release */,
-            );
-            defaultConfigurationIsVisible = 0;
-            defaultConfigurationName = Release;
-        };
+		D7FBBA3B2195C5E900410C10 /* Build configuration list for PBXProject "Gleam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FBBA502195C5E900410C10 /* Debug */,
+				D7FBBA512195C5E900410C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7FBBA522195C5E900410C10 /* Build configuration list for PBXNativeTarget "Gleam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FBBA532195C5E900410C10 /* Debug */,
+				D7FBBA542195C5E900410C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-    };
-    rootObject = D7FBBA382195C5E900410C10 /* Project object */;
+	};
+	rootObject = D7FBBA382195C5E900410C10 /* Project object */;
 }
