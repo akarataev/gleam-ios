@@ -17,7 +17,7 @@ enum HealthService {
 extension HealthService: TargetType {
     
     var baseURL: URL {
-        return URL(string: "http://18.222.158.154:8000/")!
+        return URL(string: "http://gleam.apptolab.ru:8000/")!
     }
     
     var path: String {

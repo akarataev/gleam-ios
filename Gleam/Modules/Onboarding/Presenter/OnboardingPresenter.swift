@@ -42,6 +42,7 @@ extension OnboardingPresenter: OnboardingViewControllerOutput {
         let contentOffset = collectionView.contentOffset
         
         if currentCell.buttonState == .start {
+            UserSettings.skipOnboarding = true
             view.openMainScreen()
         } else {
             let visibleRect = CGRect(x: contentOffset.x + cellSize.width, y: contentOffset.y, width: cellSize.width, height: cellSize.height)
