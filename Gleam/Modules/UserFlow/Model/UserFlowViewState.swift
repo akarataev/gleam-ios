@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
+struct UserFlowViewState {
+    var title: String
+    var placeholder: String
+    var placeholderHidden: Bool
+    var buttonEnable: Bool
+    var buttonColor: UIColor
+    var textFieldValue: String
+    var keyboardType: UIKeyboardType
+}

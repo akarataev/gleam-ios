@@ -53,6 +53,12 @@ extension ClinicListPresenter: ClinicListViewControllerOutput {
         }
         view.renderClinics()
     }
+    
+    func clinicListViewControllerDidSelectedClinic(_ view: ClinicListViewController, indexPath: IndexPath) {
+        let userData = UserFlowData()
+        userData.clinicId = filteredClinics[indexPath.row].clinicId
+        view.navigateToUserFlow(userData: userData)
+    }
 }
 
 // MARK: - ClinicListInteractorOutput

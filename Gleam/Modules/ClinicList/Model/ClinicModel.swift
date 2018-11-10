@@ -12,6 +12,7 @@ struct ClinicModel: Codable, Model {
     var clinicId: Int
     var title: String
     var type: String
+    var address: String
     var rating: Double
     var isOpen: Bool
     var opensAt: Int?
@@ -21,6 +22,7 @@ struct ClinicModel: Codable, Model {
         case clinicId = "id"
         case title = "name"
         case type = "type"
+        case address
         case rating
         case isOpen
         case opensAt
