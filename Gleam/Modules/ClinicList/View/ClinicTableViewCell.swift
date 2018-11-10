@@ -21,8 +21,14 @@ class ClinicTableViewCell: UITableViewCell, CollectionSetupable {
     private lazy var stackView = createStackView()
     private lazy var separatorView = createSeparatorView()
     
+    private var model: ClinicModel!
+    
+    private var viewModel: ClinicViewModel {
+        return ClinicViewModel(model: model)
+    }
+    
     func setup(with model: ClinicModel) {
-        let viewModel = ClinicViewModel(model: model)
+        self.model = model
         _ = separatorView
         clinicTitleLabel.text = viewModel.title
         clinicTypeLabel.text = viewModel.type
@@ -31,6 +37,11 @@ class ClinicTableViewCell: UITableViewCell, CollectionSetupable {
         clinicOpenStatusLabel.text = viewModel.statusTitle
         clinicOpenStatusView.backgroundColor = viewModel.statusColor
         clinicRateView.value = viewModel.rating
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        clinicOpenStatusView.backgroundColor = viewModel.statusColor
     }
 }
 
