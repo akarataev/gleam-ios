@@ -30,9 +30,7 @@ class ClinicListPresenter {
 extension ClinicListPresenter: LocationManagerDelegate {
     
     func locationManagerDidChangeRequestStatus(_ locationManager: LocationManager, enable: Bool) {
-        if !enable {
-            interactor.loadClinics()
-        }
+        interactor.loadClinics()
     }
     
     func locationManagerDidChangeCoordinates(_ locationManager: LocationManager) {
