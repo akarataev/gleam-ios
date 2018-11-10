@@ -45,7 +45,13 @@ extension HealthService: TargetType {
     var task: Task {
         switch self {
         case .getClinics:
-            return .requestPlain
+            let lat = UserSettings.lat
+            let lon = UserSettings.lon
+            if lat.isZero || lon.isZero {
+                return .requestPlain
+            } else {
+                return .requestParameters(parameters: ["lat": lat, "lon": lon], encoding: URLEncoding.default)
+            }
         case .sendUserData(let data):
             return .requestParameters(parameters: data.makeJSON(), encoding: JSONEncoding.default)
         }

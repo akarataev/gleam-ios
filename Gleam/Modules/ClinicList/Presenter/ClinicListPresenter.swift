@@ -19,9 +19,24 @@ class ClinicListPresenter {
     
     private var clinics = [ClinicModel]()
     private var filteredClinics = [ClinicModel]()
+    private let locationManager = LocationManager()
     
     init(interactor: ClinicListInteractorInput) {
         self.interactor = interactor
+        locationManager.delegate = self
+    }
+}
+
+extension ClinicListPresenter: LocationManagerDelegate {
+    
+    func locationManagerDidChangeRequestStatus(_ locationManager: LocationManager, enable: Bool) {
+        if !enable {
+            interactor.loadClinics()
+        }
+    }
+    
+    func locationManagerDidChangeCoordinates(_ locationManager: LocationManager) {
+        interactor.loadClinics()
     }
 }
 
@@ -29,7 +44,7 @@ class ClinicListPresenter {
 extension ClinicListPresenter: ClinicListViewControllerOutput {
     
     func clinicListViewControllerDidLoad(_ view: ClinicListViewController) {
-        interactor.loadClinics()
+        locationManager.requestAccess()
     }
     
     func clinicListViewControllerGetRows(_ view: ClinicListViewController) -> Int {
