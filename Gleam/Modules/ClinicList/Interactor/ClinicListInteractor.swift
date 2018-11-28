@@ -21,7 +21,7 @@ protocol ClinicListInteractorOutput: class {
 
 // MARK: - ClinicListInteractor
 class ClinicListInteractor {
-    weak var output: ClinicListInteractorOutput?
+    weak var output: ClinicListInteractorOutput!
 }
 
 // MARK: - ClinicListInteractorInput
@@ -30,9 +30,9 @@ extension ClinicListInteractor: ClinicListInteractorInput {
         NetworkManager.getClinics { [weak self] value in
             switch value {
             case .success(let clinics):
-                self?.output?.didLoadClinicsSuccess(clinics)
+                self?.output.didLoadClinicsSuccess(clinics)
             case .failure(let error):
-                self?.output?.didLoadClinicsFailure(error)
+                self?.output.didLoadClinicsFailure(error)
             }
         }
     }

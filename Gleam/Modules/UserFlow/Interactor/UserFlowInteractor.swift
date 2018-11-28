@@ -20,7 +20,7 @@ protocol UserFlowInteractorOutput: class {
 }
 
 class UserFlowInteractor {
-    weak var output: UserFlowInteractorOutput?
+    weak var output: UserFlowInteractorOutput!
 }
 
 extension UserFlowInteractor: UserFlowInteractorInput {
@@ -28,9 +28,9 @@ extension UserFlowInteractor: UserFlowInteractorInput {
         NetworkManager.sendUserData(userData: userData) { [weak self] result in
             switch result {
             case .success:
-                self?.output?.didSuccessSendData()
+                self?.output.didSuccessSendData()
             case .failure:
-                self?.output?.didFailureSendData()
+                self?.output.didFailureSendData()
             }
         }
     }

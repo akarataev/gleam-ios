@@ -11,13 +11,13 @@ import UIKit
 
 class OnboardingPresenter {
     
-    weak var view: OnboardingViewControllerInput?
+    weak var view: OnboardingViewControllerInput!
+    
     private let onboardingModels = [
         OnboardingModel(onboardingImage: #imageLiteral(resourceName: "icOnboarding1"), onboardingTitle: "SKIN CANCER", onboardingDescription: "Skin cancer is in third place in terms of the incidence of oncology detection in Russian men and second in women.", onboardingButtonState: .next),
         OnboardingModel(onboardingImage: #imageLiteral(resourceName: "icOnboarding2"), onboardingTitle: "SKIN SCREENING", onboardingDescription: "The algorithm based on machine learning technology allows you to get a preliminary diagnosis before going to the doctor.", onboardingButtonState: .next),
         OnboardingModel(onboardingImage: #imageLiteral(resourceName: "icOnboarding3"), onboardingTitle: "MEDICAL CARE", onboardingDescription: "If the disease is detected, the application will help you quickly find a specialized clinic and make an appointment.", onboardingButtonState: .start)
     ]
-    
     private var page = 0
 }
 
@@ -43,12 +43,12 @@ extension OnboardingPresenter: OnboardingViewControllerOutput {
         
         if currentCell.buttonState == .start {
             UserSettings.skipOnboarding = true
-            view.openMainScreen()
+            self.view.openMainScreen()
         } else {
             let visibleRect = CGRect(x: contentOffset.x + cellSize.width, y: contentOffset.y, width: cellSize.width, height: cellSize.height)
             collectionView.scrollRectToVisible(visibleRect, animated: true)
             page += 1
-            view.scrollToPage(page: page, buttonTitle: currentCell.buttonTtitle)
+            self.view.scrollToPage(page: page, buttonTitle: currentCell.buttonTtitle)
         }
     }
     
@@ -57,12 +57,12 @@ extension OnboardingPresenter: OnboardingViewControllerOutput {
             let indexPath = collectionView.indexPath(for: cell),
             let currentCell = getCurrentCell(collectionView) else { return }
         page = indexPath.row
-        view.scrollToPage(page: page, buttonTitle: currentCell.buttonTtitle)
+        self.view.scrollToPage(page: page, buttonTitle: currentCell.buttonTtitle)
     }
     
     func onboardingViewControllerEndScrollingAnimation(_ view: OnboardingViewController, collectionView: UICollectionView) {
         guard let currentCell = getCurrentCell(collectionView) else { return }
-        view.scrollToPage(page: page, buttonTitle: currentCell.buttonTtitle)
+        self.view.scrollToPage(page: page, buttonTitle: currentCell.buttonTtitle)
     }
     
     private func getCurrentCell(_ collectionView: UICollectionView) -> OnboardingCollectionViewCell? {

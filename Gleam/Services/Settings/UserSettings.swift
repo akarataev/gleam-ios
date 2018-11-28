@@ -10,36 +10,30 @@ import Foundation
 
 struct UserSettings {
     
-    struct UserSettingKeys {
-        static let skipOnboarding = "skipOnboarding"
-        static let lat = "lat"
-        static let lon = "lon"
-    }
-    
     static var skipOnboarding: Bool {
         get {
-            return UserDefaults.standard.bool(forKey: UserSettingKeys.skipOnboarding)
+            return UserDefaults.standard.bool(forKey: #function)
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: UserSettingKeys.skipOnboarding)
+            UserDefaults.standard.set(newValue, forKey: #function)
         }
     }
     
     static var lat: Double {
         get {
-            return UserDefaults.standard.double(forKey: UserSettingKeys.lat)
+            return UserDefaults.standard.double(forKey: #function)
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: UserSettingKeys.lat)
+            UserDefaults.standard.set(newValue, forKey: #function)
         }
     }
     
     static var lon: Double {
         get {
-            return UserDefaults.standard.double(forKey: UserSettingKeys.lon)
+            return UserDefaults.standard.double(forKey: #function)
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: UserSettingKeys.lon)
+            UserDefaults.standard.set(newValue, forKey: #function)
         }
     }
 }

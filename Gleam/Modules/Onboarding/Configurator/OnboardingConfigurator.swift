@@ -9,7 +9,6 @@
 import Foundation
 
 class OnboardingConfigurator {
-    
     static func configure(_ viewController: OnboardingViewController) {
         let presenter = OnboardingPresenter()
         viewController.output = presenter
