@@ -34,21 +34,12 @@ extension ScreeningPresenter {
 }
 
 
-// MARK: - Processing of user actions
-
-extension ScreeningPresenter {
-
-}
-
-
 // MARK: - Prerouting section
 
 extension ScreeningPresenter {
     
     func routeToClinicScreen() {
-        self.router.toClinicScreen (
-            sender: view.getSender()
-        )
+        self.router.toClinicScreen(sender: view.sender)
     }
 
 }

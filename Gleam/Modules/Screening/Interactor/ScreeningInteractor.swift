@@ -17,11 +17,11 @@ class ScreeningInteractor: NSObject, ScreeningInteractorInput {
     var capturedData: Array<(String, Float)> = []
     
     
-    @objc var classificator: SkinCancerClassificator! {
+    @objc weak var classificator: SkinCancerClassificator! {
         didSet { classificator.delegate = self }
     }
     
-    @objc var captureSession: VideoCaptureSession! {
+    @objc weak var captureSession: VideoCaptureSession! {
         didSet { captureSession.addVideoBufferOutput(delegate: self) }
     }
     
@@ -39,19 +39,19 @@ extension ScreeningInteractor {
     }
     
     func setNumberOfCapturedImages(by mode: CaptureMode) {
-        self.imagesNumber = mode == .live ? 10: 1
+        self.imagesNumber = mode.rawValue
     }
     
     func evaluateDiagnosis() {
-        let benign = getPredictedScore(by: "Benign")
-        let malignant = getPredictedScore(by: "Malignant")
+        let benign = getPredictedScore(by: .benign)
+        let malignant = getPredictedScore(by: .malignant)
         output.presentResultOfClassification (
             result: malignant > benign ? .high: .low
         )
     }
     
-    func getPredictedScore(by status: String) -> Float {
-        return self.capturedData.filter { $0.0 == status }
+    func getPredictedScore(by label: ClassLabel) -> Float {
+        return self.capturedData.filter { $0.0 == label.rawValue }
             .reduce(0) { $0 + $1.1 } / Float(capturedData.count)
     }
 }
@@ -72,7 +72,9 @@ extension ScreeningInteractor: SkinCancerClassificatorDelegate {
 extension ScreeningInteractor: AVCaptureVideoDataOutputSampleBufferDelegate {
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        self.provideClassificationRequest { self.classificator.startClassification (sampleBuffer: sampleBuffer) }
+        self.provideClassificationRequest {
+            self.classificator.startClassification (sampleBuffer: sampleBuffer)
+        }
     }
     
     func provideClassificationRequest(classificationRequest: () -> Void) {

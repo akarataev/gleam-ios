@@ -42,7 +42,7 @@ private extension SkinCancerClassificator {
     
     func didFinishedByClass(with stats: Array<VNClassificationObservation>) {
         self.delegate?.classificatorFinishedWith (
-            stats: stats.map { ($0.identifier, confidence: $0.confidence) }
+            stats: stats.map { ($0.identifier, $0.confidence) }
         )
     }
 }

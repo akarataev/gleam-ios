@@ -29,7 +29,16 @@ class CaptureButton: UIButton {
 
 extension CaptureButton {
     
-    func repeatPulseAnimation(count: Int) {
+    func startAnimation(for sender: CaptureButton, by mode: CaptureMode) {
+        switch mode {
+        case .live:
+            self.repeatPulseAnimation(count: 9)
+        case .photo:
+            self.repeatPulseAnimation(count: 1)
+        }
+    }
+    
+    private func repeatPulseAnimation(count: Int) {
         guard count > 0 else { return }
         UIView.animate(withDuration: 0.3, animations: {
             self.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
@@ -40,8 +49,6 @@ extension CaptureButton {
                 self.repeatPulseAnimation(count: count - 1)
             })
         })
-        
-        
     }
 }
 

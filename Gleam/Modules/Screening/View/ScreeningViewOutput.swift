@@ -22,8 +22,6 @@ import Foundation
 extension ScreeningPresenter {
 
     func viewIsPrepareToSegue(segue: UIStoryboardSegue) {
-        router.passData (
-            segue: segue
-        )
+        router.passData(segue: segue)
     }
 }

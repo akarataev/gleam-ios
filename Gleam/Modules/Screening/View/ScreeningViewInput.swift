@@ -10,21 +10,21 @@ import UIKit
 import Foundation
 
 @objc protocol ScreeningViewInput: class {
+    
+    var sender: UIViewController { get }
+    
     func setupInitialState()
     func displayDiagnosis(state: DiagnosisRiskState)
-    func getSender() -> UIViewController
 }
 
 
 // MARK: - setup ScreeningViewController for routing
 
 extension ScreeningViewController {
+    
+    var sender: UIViewController { return self }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         output.viewIsPrepareToSegue(segue: segue)
-    }
-
-    func getSender() -> UIViewController {
-        return self
     }
 }

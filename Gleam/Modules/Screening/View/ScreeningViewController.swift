@@ -117,17 +117,8 @@ extension ScreeningViewController {
     
     @objc func captureButtonDidTap(_ sender: CaptureButton) {        
         self.statusPanel.indicate()
-        self.selectCaptureButtonAnimation(for: sender)
+        self.captureButton.startAnimation(for: sender, by: modeSegmented.mode)
         self.output.userRequestImageProcessing(mode: modeSegmented.mode)
-    }
-    
-    func selectCaptureButtonAnimation(for sender: CaptureButton) {
-        switch self.modeSegmented.mode {
-        case .live:
-            captureButton.repeatPulseAnimation(count: 9)
-        case .photo:
-            captureButton.repeatPulseAnimation(count: 1)
-        }
     }
 }
 
