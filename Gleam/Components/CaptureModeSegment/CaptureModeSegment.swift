@@ -45,8 +45,8 @@ extension CaptureModeSegment {
 // MARK: - implement capture segment mode
 
 @objc enum CaptureMode: Int {
-    case live
-    case photo
+    case live = 10
+    case photo = 1
 }
 
 

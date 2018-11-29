@@ -48,6 +48,7 @@
 		BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F75E5F707471D02F7B6B11 /* ScreeningRouterInput.swift */; };
 		C4EDC4CBBA97051A6177615B /* ScreeningViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1282BEE749F79E31E60D9980 /* ScreeningViewOutput.swift */; };
 		D71EABBE21963AEC00EBE287 /* StyleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */; };
+		D761474221AF0D6E00E33305 /* ClassLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D761474121AF0D6E00E33305 /* ClassLabels.swift */; };
 		D763539521971B4A00F01C6A /* StatusIndicatorViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D763539421971B4A00F01C6A /* StatusIndicatorViewDelegate.swift */; };
 		D7791B332196DCCD007A450C /* FTVGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D7791B322196DCCC007A450C /* FTVGG16.mlmodel */; };
 		D7791B352196DD57007A450C /* ImagePreprocessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7791B342196DD57007A450C /* ImagePreprocessing.swift */; };
@@ -118,6 +119,7 @@
 		A8BF2C576BB7C4870FDAC243 /* Pods-Gleam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gleam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gleam/Pods-Gleam.debug.xcconfig"; sourceTree = "<group>"; };
 		CD0D98666C9DBB37CB815CAD /* ScreeningModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScreeningModuleConfigurator.swift; sourceTree = "<group>"; };
 		D71EABBD21963AEC00EBE287 /* StyleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleExtensions.swift; sourceTree = "<group>"; };
+		D761474121AF0D6E00E33305 /* ClassLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassLabels.swift; sourceTree = "<group>"; };
 		D763539421971B4A00F01C6A /* StatusIndicatorViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusIndicatorViewDelegate.swift; sourceTree = "<group>"; };
 		D7791B322196DCCC007A450C /* FTVGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FTVGG16.mlmodel; sourceTree = "<group>"; };
 		D7791B342196DD57007A450C /* ImagePreprocessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreprocessing.swift; sourceTree = "<group>"; };
@@ -423,6 +425,7 @@
 				D7791B342196DD57007A450C /* ImagePreprocessing.swift */,
 				D7791B362196DE65007A450C /* SkinCancerClassificator.swift */,
 				D7791B382196DE78007A450C /* SkinCancerClassificatorDelegate.swift */,
+				D761474121AF0D6E00E33305 /* ClassLabels.swift */,
 			);
 			path = ML;
 			sourceTree = "<group>";
@@ -758,6 +761,7 @@
 				50D8E4862197223200663FEC /* UserSettings.swift in Sources */,
 				8B0798C7371363D33791C6FE /* ScreeningInteractor.swift in Sources */,
 				504328AF2195F7D2000FA9B7 /* CollectionSetupable.swift in Sources */,
+				D761474221AF0D6E00E33305 /* ClassLabels.swift in Sources */,
 				BE331EA662B877DD9175FB3D /* ScreeningRouterInput.swift in Sources */,
 				5079894C2195D5F100A6BE9D /* OnboardingViewController.swift in Sources */,
 				504328C321961631000FA9B7 /* GleamService.swift in Sources */,
@@ -919,7 +923,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = U67ZU8H7H4;
 				INFOPLIST_FILE = Gleam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -940,7 +944,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = U67ZU8H7H4;
 				INFOPLIST_FILE = Gleam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

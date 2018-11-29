@@ -26,7 +26,7 @@ import UIKit
         }
     }
     
-    var diagnosisDescription: String {
+    var description: String {
         switch self {
         case .low:
             return "LOW RISK"

@@ -92,7 +92,6 @@ private extension StatusIndicatorView {
 extension StatusIndicatorView {
     
     @objc func diagnosisViewDidTap(sender: UIView) {
-        print("tap")
         self.delegate?.statusIndicatorViewDidTap(sender: sender)
     }
 }
@@ -112,7 +111,7 @@ private extension StatusIndicatorView {
         )
         
         self.diagnosisView.applyStyles (
-            diagnosis: state.diagnosisDescription,
+            diagnosis: state.description,
             color: state.color
         )
     }

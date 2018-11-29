@@ -18,11 +18,11 @@ extension UIColor {
     }
     
     static var lowIndicatorColor: UIColor {
-        return UIColor (red: 156 / 255, green: 238 / 255, blue: 106 / 255, alpha: 1)
+        return UIColor(red: 156 / 255, green: 238 / 255, blue: 106 / 255, alpha: 1)
     }
 
     static var mediumIndicatorColor: UIColor {
-        return UIColor (red: 18 / 255, green: 204 / 255, blue: 255 / 255, alpha: 1)
+        return UIColor(red: 18 / 255, green: 204 / 255, blue: 255 / 255, alpha: 1)
     }
 
     static var highIndicatorColor: UIColor {
@@ -34,11 +34,11 @@ extension UIColor {
     }
     
     static var baseButtonColor: UIColor {
-        return UIColor (red: 17 / 255, green: 181 / 255, blue: 226 / 255, alpha: 0.7)
+        return UIColor(red: 17 / 255, green: 181 / 255, blue: 226 / 255, alpha: 0.7)
     }
     
     static var spotButtonColor: UIColor {
-        return UIColor (red: 18 / 255, green: 204 / 255, blue: 255 / 255, alpha: 1)
+        return UIColor(red: 18 / 255, green: 204 / 255, blue: 255 / 255, alpha: 1)
     }
 }
 
