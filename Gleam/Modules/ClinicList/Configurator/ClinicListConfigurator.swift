@@ -9,7 +9,6 @@
 import Foundation
 
 class ClinicListConfigurator {
-    
     static func configure(_ viewController: ClinicListViewController) {
         let interactor = ClinicListInteractor()
         let presenter = ClinicListPresenter(interactor: interactor)

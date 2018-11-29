@@ -14,7 +14,7 @@ import UIKit
 
 class ClinicListPresenter {
     
-    weak var view: ClinicListViewControllerInput?
+    weak var view: ClinicListViewControllerInput!
     var interactor: ClinicListInteractorInput
     
     private var clinics = [ClinicModel]()
@@ -71,13 +71,13 @@ extension ClinicListPresenter: ClinicListViewControllerOutput {
     func clinicListViewControllerLoadWithFilter(_ view: ClinicListViewController, text: String) {
         filterText = text
         applyFilter()
-        view.renderClinics()
+        self.view.renderClinics()
     }
     
     func clinicListViewControllerDidSelectedClinic(_ view: ClinicListViewController, indexPath: IndexPath) {
         let userData = UserFlowData()
         userData.clinicId = filteredClinics[indexPath.row].clinicId
-        view.navigateToUserFlow(userData: userData)
+        self.view.navigateToUserFlow(userData: userData)
     }
 }
 
@@ -88,10 +88,10 @@ extension ClinicListPresenter: ClinicListInteractorOutput {
         self.clinics = clinics
         self.filteredClinics = clinics
         applyFilter()
-        view?.renderClinics()
+        view.renderClinics()
     }
     
     func didLoadClinicsFailure(_ error: GleamError) {
-        view?.renderError(description: error.localizedDescription)
+        view.renderError(description: error.localizedDescription)
     }
 }

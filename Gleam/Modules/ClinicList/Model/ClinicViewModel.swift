@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 struct ClinicViewModel {
+    
     private let model: ClinicModel
     
     init(model: ClinicModel) {
@@ -45,11 +46,7 @@ struct ClinicViewModel {
     }
     
     var statusTitle: String {
-        if model.isOpen {
-            return "Open around the clock"
-        } else {
-            return "Closed until tomorrow"
-        }
+        return model.isOpen ? "Open around the clock" : "Closed until tomorrow"
     }
     
     var rating: CGFloat {

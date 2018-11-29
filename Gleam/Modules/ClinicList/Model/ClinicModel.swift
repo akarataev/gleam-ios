@@ -9,6 +9,7 @@
 import Foundation
 
 struct ClinicModel: Codable, Model {
+    
     var clinicId: Int
     var title: String
     var type: String

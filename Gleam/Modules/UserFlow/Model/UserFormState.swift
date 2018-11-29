@@ -9,6 +9,7 @@
 import Foundation
 
 enum UserFormState {
+    
     case name
     case number
     case email

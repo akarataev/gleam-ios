@@ -8,7 +8,4 @@
 
 import Foundation
 
-
-protocol Model {
-    
-}
+protocol Model { }

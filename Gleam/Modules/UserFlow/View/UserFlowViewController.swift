@@ -181,6 +181,7 @@ private extension UserFlowViewController {
 
 // MARK: - UserFlowViewControllerInput
 extension UserFlowViewController: UserFlowViewControllerInput {
+    
     func render(viewState: UserFlowViewState) {
         titleLabel.text = viewState.title
         textField.placeholder = viewState.placeholder

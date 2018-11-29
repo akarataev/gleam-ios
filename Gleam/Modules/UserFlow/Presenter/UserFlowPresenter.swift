@@ -12,7 +12,7 @@ import UIKit
 // MARK: - UserFlowPresenter
 class UserFlowPresenter {
     
-    weak var view: UserFlowViewControllerInput?
+    weak var view: UserFlowViewControllerInput!
     private var currentState: UserFormState
     private var userData = UserFlowData()
     private var interactor: UserFlowInteractorInput
@@ -60,7 +60,7 @@ class UserFlowPresenter {
             if currentText.isEmpty {
                 placeholderHidden = true
                 buttonEnable = false
-            } else if !userData.validaEmail() {
+            } else if !userData.validateEmail() {
                 placeholderHidden = false
             } else {
                 placeholderHidden = false
@@ -76,7 +76,7 @@ class UserFlowPresenter {
                                           textFieldValue: currentText,
                                           keyboardType: keyboardType,
                                           buttonTitle: currentState.getButtonTitle())
-        self.view?.render(viewState: viewState)
+        view.render(viewState: viewState)
     }
     
     func userFlowViewControllerNavigate(_ view: UserFlowViewController) {
@@ -128,10 +128,10 @@ extension UserFlowPresenter: UserFlowViewControllerOutput {
 extension UserFlowPresenter: UserFlowInteractorOutput {
     
     func didSuccessSendData() {
-        view?.successSendData()
+        view.successSendData()
     }
     
     func didFailureSendData() {
-        view?.failureSendData()
+        view.failureSendData()
     }
 }
