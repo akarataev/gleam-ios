@@ -250,9 +250,9 @@ extension StyleWrapper where Element: CaptureModeSegment {
     static func captureSegmentLayoutStyle(at view: UIView) -> StyleWrapper {
         return .wrap { captureSegment in
             captureSegment.snp.makeConstraints { make in
-                make.centerX.equalTo(view.snp.centerX).offset(42)
+                make.centerX.equalTo(view.snp.centerX).offset(39)
                 make.bottom.equalTo(view.snp.bottom).offset(-131)
-                make.width.equalTo(127)
+                make.width.equalTo(130)
                 make.height.equalTo(20)
             }
             
@@ -266,7 +266,7 @@ extension StyleWrapper where Element: CaptureModeSegment {
             captureSegment.snp.makeConstraints { make in
                 make.centerX.equalTo(view.snp.centerX).offset(offset)
                 make.bottom.equalTo(view.snp.bottom).offset(-131)
-                make.width.equalTo(127)
+                make.width.equalTo(130)
                 make.height.equalTo(20)
             }
         }
